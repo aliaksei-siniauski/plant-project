@@ -13,6 +13,7 @@
 @import "base/base";
 @import "base/reset";
 @import "base/typography";
+@import "base/font";
 
 /*Utilities  */
 
@@ -25,20 +26,8 @@
 @import "components/icon";
 @import "components/nav";
 @import "components/burger";
-@import "components/slider";
-@import "components/section";
-@import "components/credit-card";
 
 /* Layout  */
 
 @import "layout/header";
-@import "layout/hero";
-@import "layout/about";
-@import "layout/our-friends";
-@import "layout/help";
-@import "layout/donation";
 @import "layout/footer";
-
-/* Pages */
-
-@import "pages/pets-page";
