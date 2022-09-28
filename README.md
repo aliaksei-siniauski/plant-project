@@ -35,4 +35,3 @@ Planet responsive and interactive website
 - CSS, SCSS
 - Vanilla JavaScript
 - ECMAS 6
-- Webpack
