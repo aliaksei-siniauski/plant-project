@@ -3,7 +3,7 @@
 $color-background-section: #edf2ec;
 $color-text-main: #636060;
 $color-text-second: #717171;
-$color-links: #010201;
+$color-link: #010201;
 $color-accent: #499a18;
 $color-hover: #e06733;
 $color-input-active: #c1e698;
@@ -42,3 +42,12 @@ $font-family-second: "Inika", serif;
 $regular: 400;
 $light: 300;
 $bold: 700;
+
+/* Padding, Margin */
+
+$padding-space: 1.5rem;
+$header-padding: 5rem;
+$nav-padding: 4.4rem;
+
+/* Container width */
+$content-width: 1252px;

@@ -3,8 +3,10 @@
 /* Line height */
 /* Font Familly */
 /* Font weight */
+/* Padding, Margin */
+/* Container width */
 /* Meida quaries */
-body {
+.header__container, .list, .logo, body {
   display: flex;
 }
 
@@ -12,12 +14,20 @@ body {
   flex-direction: column;
 }
 
-body {
+.header__container, body {
   justify-content: space-between;
 }
 
-h4, h3 {
+.header__container, .list, .logo {
+  align-items: center;
+}
+
+.list__link, h4, h3 {
   font-family: "Inika", serif;
+}
+
+.list__link, .logo:hover .logo__title, .logo {
+  transition: ease-in-out 0.5s;
 }
 
 /* Vendors */
@@ -503,11 +513,52 @@ h4 {
   font-style: normal;
 }
 /*Utilities  */
+.container {
+  max-width: 1252px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
 /* Components */
+.logo:hover .logo__title {
+  color: #499a18;
+}
+
 .icon {
   display: inline-block;
 }
+.icon--logo {
+  width: 20.07px;
+  height: 19.55px;
+  background: url("../icons/logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.list__item:not(:last-child) {
+  padding: 0 4.4rem 0 0;
+}
+
+.list__link {
+  font-size: 2rem;
+  line-height: 5rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #010201;
+}
+.list__link:hover {
+  color: #e06733;
+  opacity: 0.7;
+}
+.list__link--active {
+  color: #e06733;
+  opacity: 0.7;
+}
 
 /* Layout  */
+.header {
+  padding: 5rem 0;
+  background: #edf2ec;
+}
 
 /*# sourceMappingURL=main.css.map */

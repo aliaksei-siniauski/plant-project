@@ -1,0 +1,11 @@
+.logo {
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %transition;
+  &:hover {
+    .logo__title {
+      @extend %transition;
+      color: $color-accent;
+    }
+  }
+}
