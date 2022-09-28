@@ -1,1 +1,19 @@
-]
+h1 {
+  @include font($main-size, $line-height-logo);
+  color: $color-dark;
+}
+
+h2 {
+  @include font($accent-size, $line-height-second);
+}
+
+h3 {
+  @extend %font-add;
+  @include font($section-size, $line-height-header);
+}
+
+h4 {
+  @extend %font-add;
+  @include font($main-size, $line-height-main);
+  color: $color-dark;
+}
