@@ -7,11 +7,11 @@
 /* Padding, Margin */
 /* Container width */
 /* Meida quaries */
-.contacts__container, .call-us, .price__item, .price-accordion, .prices__wrapper, .services, .service__top, .about-us__container, .hero__content, .hero__container, .header__container, .list, .logo, body {
+.footer-social, .contacts__container, .call-us, .price__item, .price-accordion, .prices__wrapper, .services, .service__top, .about-us__container, .hero__content, .hero__container, .header__container, .layout-3-column, .list, .logo, body {
   display: flex;
 }
 
-.services {
+.services, .layout-3-column {
   flex-wrap: wrap;
 }
 
@@ -19,7 +19,7 @@
   flex-direction: column;
 }
 
-.contacts__container, .price__item, .prices__wrapper, .services, .about-us__container, .hero__container, .header__container, body {
+.contacts__container, .price__item, .prices__wrapper, .services, .about-us__container, .hero__container, .header__container, .layout-3-column, body {
   justify-content: space-between;
 }
 
@@ -27,7 +27,7 @@
   justify-content: center;
 }
 
-.price__item, .price-accordion, .service__top, .about-us__container, .hero__container, .header__container, .list, .icon--cicle, .logo {
+.footer__container .layout-3-column, .price__item, .price-accordion, .service__top, .about-us__container, .hero__container, .header__container, .list, .icon--cicle, .logo {
   align-items: center;
 }
 
@@ -48,7 +48,7 @@
   text-align: center;
 }
 
-.service-item:hover .service-item__img, .service-item:hover .service-item--opacity, .service-item, .list__link, .logo:hover .logo__title, .logo, .button {
+.footer-social, .service-item:hover .service-item__img, .service-item:hover .service-item--opacity, .service-item, .list__link, .logo:hover .logo__title, .logo, .button {
   transition: ease-in-out 0.5s;
 }
 
@@ -626,6 +626,10 @@ h4 {
   color: #499a18;
 }
 
+.layout-3-column > * {
+  flex-basis: 33.3333333333%;
+}
+
 /* Layout  */
 .header {
   padding: 5rem 0;
@@ -835,6 +839,27 @@ h4 {
   background: #d6e7d2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 0.5rem 3.5rem 0.5rem 2rem;
+}
+
+.footer__container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.footer-date,
+.footer-logo {
+  color: #000000;
+}
+
+.footer-social {
+  justify-content: end;
+}
+
+.social-list {
+  display: inline-flex;
+}
+
+.social-list__item:not(:last-child) {
+  padding-right: 2.75rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -25,13 +25,13 @@
               <a class="list__link" href="#about-us">About us</a>
             </li>
             <li class="list__item">
-              <a class="list__link" href="#">Service</a>
+              <a class="list__link" href="#service">Service</a>
             </li>
             <li class="list__item">
-              <a class="list__link" href="#">Price</a>
+              <a class="list__link" href="#price">Price</a>
             </li>
             <li class="list__item">
-              <a class="list__link" href="#">Contacts</a>
+              <a class="list__link" href="#contacts">Contacts</a>
             </li>
           </ul>
           <!-- close list -->
@@ -227,7 +227,7 @@
         <!-- close container -->
       </section>
       <!-- close service -->
-      <section class="price">
+      <section id="price" class="price">
         <div class="container price__container">
           <div class="prices__wrapper">
             <div class="prices">
@@ -283,7 +283,7 @@
         </div>
         <!-- close container -->
       </section>
-      <section class="contacts">
+      <section id="contacts" class="contacts">
         <div class="container contacts__container">
           <img
             class="contacts__img"
@@ -309,7 +309,65 @@
         <!-- close container -->
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="layout-3-column">
+          <div class="footer-date">
+            <span class="footer-date__item">©</span>
+            <span class="footer-date__item">2022</span>
+            <span class="footer-date__item">
+              <a href="https://github.com/aliaksei-siniauski">github</a>
+            </span>
+          </div>
+          <!-- footer-date -->
+          <div class="footer-logo">
+            <a href="#"><span>Rolling Scopes School</span> </a>
+          </div>
+          <!-- footer-logo -->
+          <div class="footer-social">
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a href="https://www.instagram.com">
+                  <img
+                    class="footer-icon icon"
+                    src="src/icons/social/inst.svg"
+                    alt="instagram"
+                  />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="https://about.facebook.com/">
+                  <img
+                    class="footer-icon icon"
+                    src="src/icons/social/meta.svg"
+                    alt="meta"
+                  />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="https://twitter.com/">
+                  <img
+                    class="footer-icon icon"
+                    src="src/icons/social/twitter.svg"
+                    alt="twitter"
+                  />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="https://pinterest.com/">
+                  <img
+                    class="footer-icon icon"
+                    src="src/icons/social/pinterest.svg"
+                    alt="pinterest"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- close footer-social -->
+      </div>
+    </footer>
   </body>
   <script src="src/index.js"></script>
 </html>
