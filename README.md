@@ -16,18 +16,13 @@ Planet responsive and interactive website
 - Querying and manipulating with the DOM
 - Event listeners
 - Scroll and click events
-- Arrow and callback functions
+- Arrow functions
 - Classes
 - Modular JavaScript
 
 ## Features:
 
 - Interactive burger menu
-- Infinite slider with a pseudo-random set of pets
-- Pop-up menu with a description of the current pet
-- Pagination on the pets page
-- Be able to resize the page without breaking the layout
-- Be able to smoothly scroll to other sections of the page with anchors
 
 ## Techs:
 
@@ -35,4 +30,3 @@ Planet responsive and interactive website
 - CSS, SCSS
 - Vanilla JavaScript
 - ECMAS 6
-- Webpack
