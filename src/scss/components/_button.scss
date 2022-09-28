@@ -1,0 +1,21 @@
+.button {
+  padding: 1.2rem 2.6rem;
+  color: $color-dark;
+  font-family: $font-family-main;
+  @include font($main-size, $line-height-main);
+  background: transparent;
+  border: 2px solid $color-hover;
+  border-radius: $border-radius-button;
+  @extend %cursor-pointer;
+  @extend %transition;
+  &:hover {
+    color: $color-light;
+    background: $color-hover;
+  }
+  &--color {
+    font-weight: $bold;
+    color: $color-hover;
+    border: 1px solid $color-hover;
+    border-radius: $border-radius-tag;
+  }
+}

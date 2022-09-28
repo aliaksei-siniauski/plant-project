@@ -26,6 +26,12 @@
   font-family: $font-family-second;
 }
 
+%text-style {
+  font-family: $font-family-main;
+  @include font($main-size, $line-height-text);
+  color: $color-text-main;
+}
+
 %text-center {
   text-align: center;
 }

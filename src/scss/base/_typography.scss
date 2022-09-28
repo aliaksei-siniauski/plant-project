@@ -4,7 +4,7 @@ h1 {
 }
 
 h2 {
-  @include font($accent-size, $line-height-second);
+  @include font($accent-size, $line-height-second, $bold);
 }
 
 h3 {
