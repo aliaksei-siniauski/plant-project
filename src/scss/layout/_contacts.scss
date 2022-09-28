@@ -1,0 +1,36 @@
+.contacts {
+  padding: 6rem 0 0;
+  background: $color-background-section;
+}
+
+.contacts__container {
+  @extend %flex;
+  @extend %js-content-space-between;
+}
+
+.contacts__content {
+  max-width: 709px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.7rem;
+}
+
+.contacts__drop-down {
+  max-width: 450px;
+  width: 100%;
+  align-self: flex-end;
+}
+
+.contacts__icon--cicle {
+  background: $color-drop-btn-unactive;
+}
+
+.contacts__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-input-unactive;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 3.5rem 0.5rem 2rem;
+}

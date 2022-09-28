@@ -7,7 +7,7 @@
 /* Padding, Margin */
 /* Container width */
 /* Meida quaries */
-.call-us, .price__item, .price-accordion, .prices__wrapper, .services, .service__top, .about-us__container, .hero__content, .hero__container, .header__container, .list, .logo, body {
+.contacts__container, .call-us, .price__item, .price-accordion, .prices__wrapper, .services, .service__top, .about-us__container, .hero__content, .hero__container, .header__container, .list, .logo, body {
   display: flex;
 }
 
@@ -15,19 +15,19 @@
   flex-wrap: wrap;
 }
 
-.call-us, .price__icon--cicle, .price-accordion, .hero__content, body {
+.call-us, .price-accordion, .hero__content, .icon--cicle, body {
   flex-direction: column;
 }
 
-.price__item, .prices__wrapper, .services, .about-us__container, .hero__container, .header__container, body {
+.contacts__container, .price__item, .prices__wrapper, .services, .about-us__container, .hero__container, .header__container, body {
   justify-content: space-between;
 }
 
-.price__icon--cicle, .price-accordion {
+.price-accordion, .icon--cicle {
   justify-content: center;
 }
 
-.price__icon--cicle, .price__item, .price-accordion, .service__top, .about-us__container, .hero__container, .header__container, .list, .logo {
+.price__item, .price-accordion, .service__top, .about-us__container, .hero__container, .header__container, .list, .icon--cicle, .logo {
   align-items: center;
 }
 
@@ -52,7 +52,7 @@
   transition: ease-in-out 0.5s;
 }
 
-.price__item, .service-item, .button {
+.price__item, .service-item, .icon--cicle, .button {
   cursor: pointer;
 }
 
@@ -594,6 +594,14 @@ h4 {
   background-repeat: no-repeat;
 }
 
+.icon--cicle {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+
 .list__item:not(:last-child) {
   padding: 0 4.4rem 0 0;
 }
@@ -772,14 +780,6 @@ h4 {
   border-radius: 20px;
 }
 
-.price__icon--cicle {
-  width: 16px;
-  height: 16px;
-  display: inline-flex;
-  background: #dce9d9;
-  border-radius: 50%;
-}
-
 .price__plan {
   font-family: "Inter", sans-serif;
 }
@@ -803,6 +803,38 @@ h4 {
 
 .call-us__button {
   margin: 0 0 0.7rem 0;
+}
+
+.contacts {
+  padding: 6rem 0 0;
+  background: #edf2ec;
+}
+
+.contacts__content {
+  max-width: 709px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.7rem;
+}
+
+.contacts__drop-down {
+  max-width: 450px;
+  width: 100%;
+  align-self: flex-end;
+}
+
+.contacts__icon--cicle {
+  background: #aea1a1;
+}
+
+.contacts__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d6e7d2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 3.5rem 0.5rem 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

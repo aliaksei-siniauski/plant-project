@@ -17,4 +17,13 @@
 }
 
 .icon--cicle {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  background: $color-drop-down;
+  border-radius: 50%;
+  @extend %cursor-pointer;
 }
