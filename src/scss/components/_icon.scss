@@ -1,0 +1,140 @@
+%list-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.icon {
+  display: inline-block;
+  &--arrow-next {
+    width: 14px;
+    height: 6px;
+    background: url("../icons/arrow-next.svg");
+  }
+  &--arrow-prev {
+    width: 14px;
+    height: 6px;
+    background: url("../icons/arrow-prev.svg");
+  }
+
+  &--pet-food {
+    @extend %list-icon;
+    background: url("../icons/help/pet-food.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
+  }
+
+  &--transportation {
+    @extend %list-icon;
+    background: url("../icons/help/transportation.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
+  }
+
+  &--toys {
+    @extend %list-icon;
+    background: url("../icons/help/toys.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
+  }
+
+  &--bowls-cups {
+    @extend %list-icon;
+    background: url("../icons/help/bowls-cups.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
+  }
+
+  &--shampoos {
+    @extend %list-icon;
+    background: url("../icons/help/shampoos.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
+  }
+
+  &--vitamins {
+    @extend %list-icon;
+    background: url("../icons/help/vitamins.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
+  }
+
+  &--medicines {
+    @extend %list-icon;
+    background: url("../icons/help/medicines.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
+  }
+
+  &--collars-leashes {
+    @extend %list-icon;
+    background: url("../icons/help/leashes.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
+  }
+
+  &--sleeping-area {
+    @extend %list-icon;
+    background: url("../icons/help/sleeping-area.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
+  }
+
+  &--credit-card {
+    width: 30px;
+    height: 23px;
+    background: url("../icons/credit-card.svg");
+  }
+
+  &--phone {
+    width: 40px;
+    height: 32px;
+    background: url("../icons/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--mail {
+    width: 40px;
+    height: 32px;
+    background: url("../icons/mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--marker {
+    width: 22px;
+    height: 32px;
+    background: url("../icons/marker.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
