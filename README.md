@@ -1,6 +1,6 @@
-# [planet-project](https://aliaksei-siniauski.github.io/shelter-project/)
+# [plant-project](https://aliaksei-siniauski.github.io/shelter-project/)
 
-![planet-project](https://snipboard.io/S25ycq.jpg)
+![plant-project](https://snipboard.io/S25ycq.jpg)
 
 ## Project Description:
 
