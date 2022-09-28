@@ -7,4 +7,14 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  &--arrow-down {
+    width: 4px;
+    height: 2.35px;
+    background: url("../icons/accordion/arrow-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.icon--cicle {
 }

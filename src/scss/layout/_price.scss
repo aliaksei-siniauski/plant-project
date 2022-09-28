@@ -1,0 +1,73 @@
+.prices__wrapper {
+  @extend %flex;
+  @extend %js-content-space-between;
+  padding: 4rem 0 1.2rem 0;
+}
+
+.prices__title {
+  margin: 0 0 6rem 0;
+  @extend %font-add;
+  font-weight: $bold;
+  line-height: 4.8rem;
+  color: $color-dark;
+}
+
+.price-accordion {
+  width: 332px;
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  gap: 3.2rem;
+  padding: 3.4rem 4.1rem;
+  border: 1px solid #e3e1d5;
+  border-radius: 20px;
+}
+
+.price__item {
+  max-width: 250px;
+  width: 100%;
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-space-between;
+  padding: 1.6rem 4rem;
+  background: $color-background-section;
+  border-radius: 20px;
+  @extend %cursor-pointer;
+}
+
+.price__icon--cicle {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  background: $color-input-background;
+  border-radius: 50%;
+}
+
+.price__plan {
+  font-family: $font-family-main;
+}
+
+/* Call-us */
+
+.call-us {
+  @extend %flex;
+  @extend %flex-column;
+  align-items: flex-end;
+}
+
+.call-us__text {
+  margin: 0 0 3.1rem 0;
+  max-width: 452px;
+  width: 100%;
+  @include font($section-size, $line-height-header, $bold);
+  color: $color-dark;
+  text-align: right;
+}
+
+.call-us__button {
+  margin: 0 0 0.7rem 0;
+}

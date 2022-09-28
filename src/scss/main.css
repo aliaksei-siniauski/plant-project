@@ -7,7 +7,7 @@
 /* Padding, Margin */
 /* Container width */
 /* Meida quaries */
-.services, .service__top, .about-us__container, .hero__content, .hero__container, .header__container, .list, .logo, body {
+.call-us, .price__item, .price-accordion, .prices__wrapper, .services, .service__top, .about-us__container, .hero__content, .hero__container, .header__container, .list, .logo, body {
   display: flex;
 }
 
@@ -15,19 +15,23 @@
   flex-wrap: wrap;
 }
 
-.hero__content, body {
+.call-us, .price__icon--cicle, .price-accordion, .hero__content, body {
   flex-direction: column;
 }
 
-.services, .about-us__container, .hero__container, .header__container, body {
+.price__item, .prices__wrapper, .services, .about-us__container, .hero__container, .header__container, body {
   justify-content: space-between;
 }
 
-.service__top, .about-us__container, .hero__container, .header__container, .list, .logo {
+.price__icon--cicle, .price-accordion {
+  justify-content: center;
+}
+
+.price__icon--cicle, .price__item, .price-accordion, .service__top, .about-us__container, .hero__container, .header__container, .list, .logo {
   align-items: center;
 }
 
-.list__link, h4, h3 {
+.prices__title, .list__link, h4, h3 {
   font-family: "Inika", serif;
 }
 
@@ -48,7 +52,7 @@
   transition: ease-in-out 0.5s;
 }
 
-.service-item, .button {
+.price__item, .service-item, .button {
   cursor: pointer;
 }
 
@@ -494,7 +498,7 @@ h3 {
 h4 {
   font-size: 2rem;
   line-height: 2rem;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   color: #000000;
 }
@@ -579,6 +583,13 @@ h4 {
   width: 20.07px;
   height: 19.55px;
   background: url("../icons/logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon--arrow-down {
+  width: 4px;
+  height: 2.35px;
+  background: url("../icons/accordion/arrow-down.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -732,6 +743,66 @@ h4 {
 .service-item__description {
   font-size: 1.6rem;
   color: #717171;
+}
+
+.prices__wrapper {
+  padding: 4rem 0 1.2rem 0;
+}
+
+.prices__title {
+  margin: 0 0 6rem 0;
+  font-weight: 700;
+  line-height: 4.8rem;
+  color: #000000;
+}
+
+.price-accordion {
+  width: 332px;
+  gap: 3.2rem;
+  padding: 3.4rem 4.1rem;
+  border: 1px solid #e3e1d5;
+  border-radius: 20px;
+}
+
+.price__item {
+  max-width: 250px;
+  width: 100%;
+  padding: 1.6rem 4rem;
+  background: #edf2ec;
+  border-radius: 20px;
+}
+
+.price__icon--cicle {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  background: #dce9d9;
+  border-radius: 50%;
+}
+
+.price__plan {
+  font-family: "Inter", sans-serif;
+}
+
+/* Call-us */
+.call-us {
+  align-items: flex-end;
+}
+
+.call-us__text {
+  margin: 0 0 3.1rem 0;
+  max-width: 452px;
+  width: 100%;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
+  text-align: right;
+}
+
+.call-us__button {
+  margin: 0 0 0.7rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */
