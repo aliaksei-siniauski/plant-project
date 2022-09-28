@@ -7,23 +7,19 @@
 /* Padding, Margin */
 /* Container width */
 /* Meida quaries */
-.hero__content, .hero__container, .header__container, .list, .logo, body {
+.about-us__container, .hero__content, .hero__container, .header__container, .list, .logo, body {
   display: flex;
-}
-
-.hero__content {
-  flex-wrap: wrap;
 }
 
 .hero__content, body {
   flex-direction: column;
 }
 
-.hero__container, .header__container, body {
+.about-us__container, .hero__container, .header__container, body {
   justify-content: space-between;
 }
 
-.header__container, .list, .logo {
+.about-us__container, .hero__container, .header__container, .list, .logo {
   align-items: center;
 }
 
@@ -31,7 +27,7 @@
   font-family: "Inika", serif;
 }
 
-.hero__text {
+.about-us__text, .hero__text {
   font-family: "Inter", sans-serif;
   font-size: 2rem;
   line-height: 3.5rem;
@@ -606,6 +602,11 @@ h4 {
   background: #edf2ec;
 }
 
+.hero {
+  padding: 0 0 12.6rem 0;
+  background: #edf2ec;
+}
+
 .hero__content {
   max-width: 560px;
   width: 100%;
@@ -616,7 +617,22 @@ h4 {
 }
 
 .hero__text {
+  max-width: 535px;
+  width: 100%;
   margin: 0 0 4.8rem 0;
+}
+
+.about-us {
+  padding: 8.2rem 0 10.5rem;
+}
+
+.about-us__title {
+  margin: 0 0 4rem 0;
+  color: #e06733;
+}
+
+.about-us__content {
+  max-width: 605px;
 }
 
 /*# sourceMappingURL=main.css.map */

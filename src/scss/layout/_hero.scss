@@ -1,5 +1,10 @@
+.hero {
+  padding: 0 0 12.6rem 0;
+  background: $color-background-section;
+}
 .hero__container {
   @extend %flex;
+  @extend %al-items-center;
   @extend %js-content-space-between;
 }
 
@@ -8,7 +13,6 @@
   width: 100%;
   @extend %flex;
   @extend %flex-column;
-  @extend %flex-wrap;
 }
 
 .hero__title {
@@ -16,6 +20,8 @@
 }
 
 .hero__text {
+  max-width: 535px;
+  width: 100%;
   margin: 0 0 4.8rem 0;
   @extend %text-style;
 }
