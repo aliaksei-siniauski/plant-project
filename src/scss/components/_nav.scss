@@ -11,7 +11,7 @@
 
 .list__link {
   @extend %font-add;
-  @include font($main-size, $line-height-second);
+  @include font($second-size, $line-height-second);
   color: $color-link;
   @extend %transition;
   &:hover {

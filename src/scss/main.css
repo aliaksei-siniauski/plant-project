@@ -7,19 +7,23 @@
 /* Padding, Margin */
 /* Container width */
 /* Meida quaries */
-.about-us__container, .hero__content, .hero__container, .header__container, .list, .logo, body {
+.services, .service__top, .about-us__container, .hero__content, .hero__container, .header__container, .list, .logo, body {
   display: flex;
+}
+
+.services {
+  flex-wrap: wrap;
 }
 
 .hero__content, body {
   flex-direction: column;
 }
 
-.about-us__container, .hero__container, .header__container, body {
+.services, .about-us__container, .hero__container, .header__container, body {
   justify-content: space-between;
 }
 
-.about-us__container, .hero__container, .header__container, .list, .logo {
+.service__top, .about-us__container, .hero__container, .header__container, .list, .logo {
   align-items: center;
 }
 
@@ -36,11 +40,15 @@
   color: #636060;
 }
 
-.list__link, .logo:hover .logo__title, .logo, .button {
+.service-item__content {
+  text-align: center;
+}
+
+.service-item:hover .service-item__img, .service-item:hover .service-item--opacity, .service-item, .list__link, .logo:hover .logo__title, .logo, .button {
   transition: ease-in-out 0.5s;
 }
 
-.button {
+.service-item, .button {
   cursor: pointer;
 }
 
@@ -557,6 +565,9 @@ h4 {
   border-radius: 0.5rem;
 }
 
+.logo {
+  font-size: 1.6rem;
+}
 .logo:hover .logo__title {
   color: #499a18;
 }
@@ -577,7 +588,7 @@ h4 {
 }
 
 .list__link {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 5rem;
   font-weight: 400;
   font-style: normal;
@@ -633,6 +644,94 @@ h4 {
 
 .about-us__content {
   max-width: 605px;
+}
+
+.about-us__text {
+  line-height: 3rem;
+}
+
+.service {
+  padding: 9.7rem 0 0;
+  background: #edf2ec;
+}
+
+.service__top {
+  gap: 14rem;
+  padding: 0 0 9.7rem 0;
+}
+
+.service__title {
+  color: #499a18;
+}
+
+.services__buttons button {
+  padding: 1.2rem 4rem;
+  color: #e06733;
+}
+.services__buttons button:not(:last-child) {
+  margin-right: 2.8rem;
+}
+
+.services {
+  gap: 5.5rem 0;
+  padding: 0 0 12rem 0;
+}
+
+.service-item {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 2rem;
+  overflow-x: hidden;
+}
+.service-item:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.service-item:hover .service-item--opacity {
+  opacity: 1;
+}
+.service-item:hover .service-item__img {
+  transform: scale(1.055);
+}
+.service-item:hover .service-item__content {
+  border: 0;
+  border-radius: 0;
+  z-index: 10;
+  transform: translateY(-87.5px);
+  background: hsl(0deg, 16%, 10%);
+  color: #8ba07e;
+}
+
+.service-item--opacity {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  border-radius: 2rem;
+}
+
+.service-item__img {
+  border-radius: 2rem 2rem 0px 0px;
+}
+
+.service-item__content {
+  max-width: 330px;
+  padding: 1rem 0 3.6rem;
+  border: 1px solid #e3e1d5;
+  border-radius: 0px 0px 2rem 2rem;
+  transition: transform 2s;
+}
+
+.service-item__title {
+  margin: 0 0 1rem 0;
+  color: #e06733;
+}
+
+.service-item__description {
+  font-size: 1.6rem;
+  color: #717171;
 }
 
 /*# sourceMappingURL=main.css.map */
