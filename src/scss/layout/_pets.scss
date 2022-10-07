@@ -1,0 +1,379 @@
+.pets {
+  position: relative;
+  padding: 4rem 0 10rem;
+  overflow: hidden;
+  @include media-small-desktop {
+    padding: 3rem 0 14rem;
+  }
+  @include media-tablet {
+    padding: 3rem 0 10rem;
+  }
+  @include media-mobile-big {
+    padding: 3rem 0 6rem;
+  }
+}
+
+.pets__button {
+  @extend %text-center;
+}
+
+.pets__section-img--left {
+  width: 292px;
+  height: 460px;
+  background: url("../images/page/palm.png");
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: 1px;
+  @include media-small-desktop {
+    position: absolute;
+    width: 386px;
+    height: 202px;
+    bottom: -1;
+    left: 0;
+    background: url("/src/images/flowers/small-desktop/palm.png");
+    background-repeat: no-repeat;
+  }
+  @include media-tablet {
+    position: absolute;
+    width: 385px;
+    height: 202px;
+    bottom: 0;
+    left: 0;
+    background: url("../images/flowers/tablet/palm.png");
+    background-repeat: no-repeat;
+  }
+  @include media-mobile-big {
+    width: 138px;
+    height: 72px;
+    bottom: 0px;
+    background: url("../images/flowers/mobile/palm.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.pets__section-img--right {
+  width: 368px;
+  height: 275px;
+  background: url("../images/page/strelitzia.png");
+  background-repeat: no-repeat;
+  right: 0px;
+  bottom: 1px;
+  @include media-small-desktop {
+    width: 241px;
+    height: 180px;
+    bottom: -1px;
+    right: 0;
+    background: url("../images/flowers/small-desktop/strelitzia.png");
+    background-repeat: no-repeat;
+  }
+  @include media-tablet {
+    position: absolute;
+    width: 175px;
+    height: 131px;
+    bottom: 0;
+    right: 0;
+    background: url("../images/flowers/tablet/strelitzia.png");
+    background-repeat: no-repeat;
+  }
+  @include media-mobile-big {
+    width: 68px;
+    height: 78px;
+    bottom: -11px;
+    right: 0;
+    background: url("../images/flowers/mobile/strelitzia.png");
+  }
+}
+
+.pet-cards__wrapper {
+  position: relative;
+  padding: 0 0 8rem 0rem;
+  @include media-tablet {
+    padding: 0 0 6.2rem 0rem;
+  }
+  @include media-mobile-big {
+    padding: 0 0 2.2rem 0rem;
+  }
+}
+
+.pet-cards {
+  @extend %flex;
+  @extend %flex-wrap;
+  gap: 1.8rem 3rem;
+  @include media-small-desktop {
+    gap: 9.2rem 2.9rem;
+  }
+  @include media-tablet {
+    gap: 9.3rem 2.9rem;
+  }
+  @media (max-width: 635px) {
+    gap: 9.3rem 2rem;
+    justify-content: center;
+  }
+  @include media-mobile-big {
+    justify-content: flex-start;
+  }
+  @include media-mobile-big {
+    gap: 2.5rem;
+  }
+  @media (min-width: 375px) {
+    justify-content: center;
+  }
+}
+
+.pet-card {
+  position: relative;
+  flex-basis: 366px;
+  padding: 0 0 0.6rem 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: 1px solid transparent;
+  border-radius: $button-radius-second;
+  background: $border-background;
+  @extend %cursor-pointer;
+  @extend %transition;
+  overflow: hidden;
+  @include media-small-desktop {
+    flex-basis: 294px;
+  }
+  @include media-tablet {
+    flex-basis: 285px;
+  }
+  @media (max-width: 635px) {
+    flex-basis: 220px;
+  }
+  @include media-mobile-big {
+    flex-basis: 282.2px;
+  }
+
+  &:hover {
+    .pet__picture {
+      @extend %transition;
+      transform: scale(1.028);
+      opacity: 0.6;
+    }
+    .pet-card__content {
+      z-index: 10;
+      background: rgba(236, 19, 19, 0.8);
+      border: 0;
+      border-radius: 0;
+      transform: translateY(-50px);
+      @include media-small-desktop {
+        transform: translateY(-40px);
+      }
+      @include media-tablet {
+        transform: translateY(-30px);
+      }
+      @include media-mobile-big {
+        transform: translateY(-20px);
+      }
+    }
+    .pet-card--opacity {
+      opacity: 1;
+    }
+  }
+}
+
+.pet-card--opacity {
+  @extend %position-absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+
+.pet-card__img {
+  @extend %transition;
+  &:hover {
+    transform: scale(1.028);
+  }
+}
+
+.pet-card__content {
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-space-between;
+  padding-inline: 1.3rem;
+  @extend %transition;
+  &:hover {
+    @extend %transition;
+    transform: translateY(-90%);
+    background: rgba(0, 0, 0, 0.4);
+  }
+  @include media-small-desktop {
+    padding: 0 0.8rem 0 1.5rem;
+  }
+  @include media-tablet {
+    padding: 0px 0 0 1.1rem;
+  }
+}
+
+.pet-card__description {
+  @extend %flex;
+  @extend %flex-column;
+  padding: 0.75rem 0 0.7rem;
+  @include media-tablet {
+    padding: 0.75rem 0 0;
+  }
+}
+
+.pet-card__title {
+  @extend %font-style-main;
+  @extend %text-uppercase;
+  @include media-tablet {
+    @include font($card-title-size-mb, $line-height-card-mb, $medium);
+  }
+}
+
+.pet-card__info {
+  @extend %font-info;
+  color: $color-dark;
+  @include media-tablet {
+    @include font(
+      $card-subtitle-size-mb,
+      $line-height-card-subtitle-mb,
+      $light
+    );
+  }
+}
+
+/* Pet arrows */
+
+.arrow__button {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  @extend %inline-flex;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  background: $main-gradient;
+  border-radius: 50%;
+  @extend %transition;
+  @extend %cursor-pointer;
+  @include media-mobile-big {
+    display: none;
+  }
+
+  &:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  &:active {
+    background: $color-button-active;
+  }
+}
+
+.arrow-prev {
+  top: 402px;
+  left: -83px;
+  @include media-small-desktop {
+    top: 368.5px;
+    left: 323px;
+  }
+  @include media-tablet {
+    top: 342.5px;
+    left: 223px;
+  }
+  @media (min-width: 550px) and (max-width: 631px) {
+    top: 285px;
+    left: 180px;
+  }
+}
+
+.arrow-next {
+  top: 402px;
+  right: -79px;
+  @include media-small-desktop {
+    top: 368.5px;
+    right: 322px;
+  }
+  @include media-tablet {
+    top: 343px;
+    right: 224px;
+  }
+  @media (min-width: 550px) and (max-width: 631px) {
+    top: 285px;
+    right: 180px;
+  }
+}
+
+/* Pet card */
+
+.panda-card {
+  @include media-small-desktop {
+    .pet-card__content {
+      padding: 0 13px 0 1.5rem;
+    }
+    @include media-tablet {
+      .pet-card__content {
+        padding: 0 0.7rem 0 1.1rem;
+      }
+      .pet-card__description {
+        padding: 0.7rem 0 0;
+      }
+    }
+  }
+}
+
+.sloth-card {
+  @include media-small-desktop {
+    display: none;
+  }
+}
+
+.alligators-card {
+  display: none;
+  @include media-small-desktop {
+    display: block;
+    order: 5;
+    .hide-text {
+      display: none;
+      @include media-tablet {
+        display: contents;
+      }
+    }
+    .add-symball {
+      display: contents;
+      @include media-tablet {
+        display: none;
+      }
+    }
+  }
+}
+
+.gorilas-card {
+  @include media-small-desktop {
+    order: 4;
+    .pet-card__content {
+      padding: 0 1.4rem 0 1.5rem;
+      @include media-tablet {
+        padding: 0 6px 0 12px;
+      }
+    }
+    .pet-card__title {
+      line-height: 2rem;
+    }
+    .pet-card__description {
+      padding: 0.45rem 0 0;
+    }
+  }
+}
+
+.penguins-card {
+  @include media-small-desktop {
+    order: 6;
+  }
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.cheetahs-card {
+  @include media-tablet {
+    display: none;
+  }
+}

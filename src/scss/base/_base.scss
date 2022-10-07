@@ -1,9 +1,10 @@
 body {
-  min-height: 100vh;
-  /*   @extend %flex;
+  min-width: 320px;
+  @extend %flex;
   @extend %flex-column;
-  @extend %js-content-space-between; */
+  @extend %js-content-space-between;
   font-family: $font-family-main;
-  @include font($main-size, $line-height-main);
-  color: $color-text-main;
+  color: $color-text;
+  background: $color-light;
+  overflow: hidden;
 }

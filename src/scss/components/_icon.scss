@@ -1,17 +1,185 @@
+%arrow-icon {
+  width: 18px;
+  height: 9px;
+}
+
 .icon {
   display: inline-block;
+  @extend %cursor-pointer;
+
   &--logo {
-    width: 20.07px;
-    height: 19.55px;
-    background: url("../icons/logo.svg");
+    position: absolute;
+    bottom: 6px;
+    left: 9px;
+    width: 12px;
+    height: 21px;
+    background: url("../icons/bamboo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include media-tablet {
+      bottom: -2px;
+      left: 4px;
+      width: 7px;
+      height: 17px;
+    }
+  }
+
+  &--banana {
+    width: 33px;
+    height: 37px;
+    background: url("../icons/fruit/banana.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include media-tablet {
+      width: 25.72px;
+      height: 28.84px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &--meet-fish {
+    width: 48px;
+    height: 38px;
+    background: url("../icons/fruit/meet-fish.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media-tablet {
+      width: 37.41px;
+      height: 29.62px;
+      background-repeat: no-repeat;
+    }
+  }
+  &--arrow-next {
+    @extend %arrow-icon;
+    background: url("../icons/arrows/arrow-next.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
-  &--arrow-down {
-    width: 4px;
-    height: 2.35px;
-    background: url("../icons/accordion/arrow-down.svg");
+
+  &--arrow-prev {
+    @extend %arrow-icon;
+    background: url("../icons/arrows/arrow-prev.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  &--pay {
+    width: 120px;
+    height: 108px;
+    background: url("../icons/donation/pay.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: auto;
+  }
+  &--step {
+    width: 70px;
+    height: 36px;
+    background: url("../icons/donation/step-first.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: auto;
+  }
+
+  &--zoo {
+    width: 85px;
+    height: 95px;
+    background: url("../icons/donation/zoo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: auto;
+  }
+  &--monkey {
+    width: 124.75px;
+    height: 71.6px;
+    background: url("../icons/donation/monkey.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: auto;
+  }
+  &--user {
+    width: 37px;
+    height: 37px;
+    background: url("../icons/user.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--meta {
+    width: 8px;
+    height: 16px;
+    background: url("../icons/social/meta.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--twitter {
+    width: 16px;
+    height: 16px;
+    background: url("../icons/social/twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--instagram {
+    width: 16px;
+    height: 16px;
+    background: url("../icons/social/instagram.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--youtube {
+    width: 16px;
+    height: 16px;
+    background: url("../icons/social/youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--panda-widget {
+    width: 284px;
+    height: 246px;
+    background: url("../icons/animals/panda.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    @include media-mobile-big {
+      width: 160px;
+      height: 138px;
+      background: url("../icons/donation/panda-widget-sm.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &--multiply {
+    width: 14px;
+    height: 14px;
+    background: url("../icons/multiply.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    @include media-mobile-big {
+      width: 8px;
+      height: 8px;
+      background: url("../icons/multiply-sm.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+  &--price {
+    width: 10px;
+    height: 20px;
+    background: url("../icons/donation/dollar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(63%) sepia(6%) saturate(214%) hue-rotate(163deg)
+      brightness(93%) contrast(89%);
+  }
+}
+
+.icon-round {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  background: rgba(196, 196, 196, 0.5);
 }

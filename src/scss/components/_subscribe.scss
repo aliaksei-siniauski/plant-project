@@ -1,0 +1,68 @@
+.subscribe__title {
+  color: $color-light;
+  margin: 0 0 1.4rem;
+}
+
+.subscribe__form {
+  label {
+    width: 100%;
+  }
+}
+
+.subscribe-line {
+  width: 228px;
+  outline: none;
+  border: 0.8px solid transparent;
+  padding: 1rem 0.7rem 1rem 1rem;
+  background: linear-gradient($color-background, $color-background) padding-box,
+    $main-gradient, border-box;
+  color: $color-light;
+  font-size: $main-size;
+  margin-right: 0.7rem;
+  &::placeholder {
+    @extend %font-style-main;
+    font-weight: $regular;
+    color: $color-placeholder;
+  }
+}
+
+.subscribe__form input[type="email"]:focus {
+  background: $color-block;
+  color: $color-error;
+  border: 1px solid $color-error;
+  &::placeholder {
+    color: $color-error;
+  }
+}
+
+.subscribe__form input[type="email"]:valid {
+  background: $color-block;
+  color: $color-error;
+  border: 1px solid $color-error;
+  &::placeholder {
+    color: $color-error;
+  }
+}
+
+.subscribe__form input[type="submit"] {
+  max-width: 129px;
+  width: 100%;
+  padding: 0.8rem 3.9rem;
+  @extend %font-style-main;
+  background: $color-block;
+  color: $color-dark;
+  border: 1px solid $color-text;
+  @extend %cursor-pointer;
+}
+
+.subscribe-line:focus ~ .subscribe-submit {
+  background: $color-block;
+  color: $color-error;
+  border-color: $color-error;
+}
+
+.subscribe-line:valid ~ .subscribe-submit {
+  background: $color-block;
+  color: $color-dark;
+  border-color: $color-text;
+}

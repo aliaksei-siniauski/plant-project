@@ -1,0 +1,13 @@
+.copyright {
+  @include font($main-size, $line-height-info, $thin);
+  color: $color-light;
+  @extend %transition;
+  @extend %cursor-pointer;
+  &:hover {
+    color: $color-button-active;
+  }
+}
+
+.copyright__company {
+  padding: 1rem 0 0;
+}

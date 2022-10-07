@@ -1,17 +1,15 @@
 .burger {
-  width: 40px;
-  height: 27px;
-  @extend %flex;
+  display: none;
   @extend %flex-column;
-  @extend %js-content-space-between;
-  margin: 3px 0 0;
+  gap: 0.2rem;
   @include media-tablet {
-    display: none;
+    display: flex;
   }
 }
 
 .burger__line {
-  width: 100%;
+  width: 18px;
   height: 2px;
-  background: $color-text-second;
+  background: $color-light;
+  border-radius: $logo-radius;
 }

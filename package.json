@@ -1,23 +1,19 @@
 {
-  "name": "shelter",
+  "name": "online-zoo",
   "version": "1.0.0",
+  "description": "Private repository for @aliaksei-siniauski",
   "main": "index.js",
   "scripts": {
     "style": "sass --watch src/scss/main.scss src/scss/main.css"
   },
-  "author": "Alexsi Siniauski",
-  "license": "ISC",
-  "dependencies": {
-    "sass": "^1.53.0"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aliaksei-siniauski/productivity-project.git"
+    "url": "git+https://github.com/rolling-scopes-school/aliaksei-siniauski-JSFE2022Q3.git"
   },
+  "author": "Alexsi Siniauski",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aliaksei-siniauski/productivity-project/issues"
+    "url": "https://github.com/rolling-scopes-school/aliaksei-siniauski-JSFE2022Q3/issues"
   },
-  "homepage": "https://github.com/aliaksei-siniauski/productivity-project#readme",
-  "description": ""
+  "homepage": "https://github.com/rolling-scopes-school/aliaksei-siniauski-JSFE2022Q3#readme"
 }

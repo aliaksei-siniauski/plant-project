@@ -16,37 +16,34 @@
   font-style: $style;
 }
 
-@mixin columns($width) {
-  @extend %flex;
-  @extend %flex-wrap;
-  @extend %js-content-space-between;
-  > * {
-    flex-basis: $width;
-  }
-}
-
 /* Meida quaries */
 
 @mixin media-desktop {
-  @media (min-width: $desktop-width) {
+  @media (max-width: $desktop-width) {
     @content;
   }
 }
 
 @mixin media-small-desktop {
-  @media (min-width: $small-desktop-width) {
+  @media (max-width: $small-desktop-width) {
     @content;
   }
 }
 
 @mixin media-tablet {
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     @content;
   }
 }
 
-@mixin media-mobile {
-  @media (min-width: $mobile-width) {
+@mixin media-mobile-big {
+  @media (max-width: $mobile-big-width) {
+    @content;
+  }
+}
+
+@mixin media-small-mobile {
+  @media (max-width: $mobile-small-width) {
     @content;
   }
 }
