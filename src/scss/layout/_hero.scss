@@ -1,11 +1,21 @@
 .hero {
-  padding: 0 0 12.6rem 0;
+  padding: 1.2rem 0 3rem;
   background: $color-background-section;
+  @include media-tablet {
+    padding: 4rem 0 9.6rem;
+  }
+  @include media-small-desktop {
+    padding: 0 0 11.2rem 0;
+  }
 }
 .hero__container {
   @extend %flex;
   @extend %al-items-center;
   @extend %js-content-space-between;
+  @include media-small-desktop {
+    flex-direction: row-reverse;
+    align-items: stretch;
+  }
 }
 
 .hero__content {
@@ -13,15 +23,46 @@
   width: 100%;
   @extend %flex;
   @extend %flex-column;
+  @include media-tablet {
+    max-width: 343px;
+  }
+  @include media-small-desktop {
+    max-width: 559px;
+    padding: 7rem 0 0;
+  }
 }
 
 .hero__title {
-  margin: 0 0 4.2rem 0;
+  margin: 0 0 2.2rem;
+  @include media-tablet {
+    margin: 0 0 3.3rem;
+    padding: 0 0.2rem 0;
+  }
+  @include media-small-desktop {
+    margin: 0 0 4.2rem;
+  }
 }
 
 .hero__text {
-  max-width: 535px;
-  width: 100%;
-  margin: 0 0 4.8rem 0;
+  margin: 0 0 3rem 0;
   @extend %text-style;
+  @include media-tablet {
+    width: 100%;
+    padding: 0 0 0 0.7rem;
+    margin: 0 0 3.7rem 0;
+  }
+  @include media-small-desktop {
+    max-width: 534px;
+    width: 100%;
+    margin: 0 0 4.8rem;
+    padding-left: 1px;
+    @include font($main-size, $line-height-text);
+  }
+}
+
+.hero__img {
+  @extend %display-none;
+  @include media-small-desktop {
+    display: block;
+  }
 }

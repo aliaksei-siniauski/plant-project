@@ -1,19 +1,93 @@
-.prices__wrapper {
-  @extend %flex;
-  @extend %js-content-space-between;
-  padding: 4rem 0 1.2rem 0;
+.price {
+  padding: 2.7rem 0;
+  text-align: center;
+  @include media-tablet {
+    padding: 4.2rem 0 0;
+  }
+  @include media-small-desktop {
+    position: relative;
+    padding: 5rem 0 6.5rem;
+  }
 }
 
-.prices__title {
-  margin: 0 0 6rem 0;
-  @extend %font-add;
-  font-weight: $bold;
-  line-height: 4.8rem;
+.price__content {
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 6.4rem 0;
+  }
+}
+
+.price__title {
+  /*   @extend %font-add;
+   font-weight: $bold;
+  line-height: 4.8rem; 
+    margin: 0 0 6rem 0;
+*/
+  margin: 0 0 3.8rem 0;
+  @include font($main-size-mobile, 3rem, $bold);
+  font-family: $font-family-main;
   color: $color-dark;
+  @include media-tablet {
+    margin: 0 0;
+    padding: 0 0 0 1.4rem;
+    @include font($accent-size-tablet, $line-height-header-price, $bold);
+    text-align: left;
+  }
+  @include media-small-desktop {
+    font-size: $section-size;
+    padding: 0;
+  }
+}
+
+.prices-block {
+  max-width: 224px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid $color-border-radius;
+  border-radius: 20px;
+  background: $color-light;
+  @include media-tablet {
+    max-width: 332px;
+  }
+  @include media-small-desktop {
+    margin-left: inherit;
+  }
+}
+
+.prices {
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  gap: 1.3rem;
+  padding: 2.9rem 2.2rem 2rem;
+  @include media-tablet {
+    gap: 3.2rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.price-item {
+  max-width: 180px;
+  width: 100%;
+  @extend %flex;
+  @extend %js-content-space-between;
+  @extend %al-items-center;
+  gap: 0.5rem;
+  padding: 1.6rem 4.2rem;
+  background: $color-background-section;
+  border-radius: 2rem;
+  @extend %cursor-pointer;
+  @include media-tablet {
+    max-width: 250px;
+  }
 }
 
 .price-accordion {
-  width: 332px;
+  /*  width: 332px;
   @extend %flex;
   @extend %flex-column;
   @extend %al-items-center;
@@ -21,42 +95,69 @@
   gap: 3.2rem;
   padding: 3.4rem 4.1rem;
   border: 1px solid $color-border-radius;
-  border-radius: 20px;
-}
-
-.price__item {
-  max-width: 250px;
-  width: 100%;
-  @extend %flex;
-  @extend %al-items-center;
-  @extend %js-content-space-between;
-  padding: 1.6rem 4rem;
-  background: $color-background-section;
-  border-radius: 20px;
-  @extend %cursor-pointer;
-}
-
-.price__plan {
-  font-family: $font-family-main;
+  border-radius: 20px; */
 }
 
 /* Call-us */
 
 .call-us {
-  @extend %flex;
+  /*  @extend %flex;
   @extend %flex-column;
-  align-items: flex-end;
+  align-items: flex-end; */
+  padding: 1.8rem 0 0;
+  @include media-tablet {
+    padding: 0;
+  }
+  @include media-small-desktop {
+    position: absolute;
+    top: 39px;
+    right: 112px;
+  }
 }
 
 .call-us__text {
-  margin: 0 0 3.1rem 0;
-  max-width: 452px;
+  max-width: 230px;
   width: 100%;
-  @include font($section-size, $line-height-header, $bold);
-  color: $color-dark;
-  text-align: right;
+  margin: 0 auto 1.9rem;
+  @include font($main-size, $line-height-text, $bold);
+  @extend %text-center;
+  @include media-tablet {
+    max-width: 296px;
+    @include font($main-size-mobile, $line-height-text, $bold);
+    margin: 0 0 2.5rem;
+  }
+  @include media-small-desktop {
+    max-width: 452px;
+    @include font($section-size, $line-height-header);
+    text-align: right;
+    margin: 0 0 3.5rem 0;
+  }
 }
 
 .call-us__button {
-  margin: 0 0 0.7rem 0;
+  @include media-tablet {
+    text-align: right;
+    padding: 0 0 3.8rem;
+  }
+  @include media-small-desktop {
+    padding: 0;
+  }
+  > button {
+    padding: 0.8rem 2.3rem;
+    @include media-tablet {
+      padding: 1.2rem 2.9rem;
+      @include font($main-size, $line-height-tag);
+    }
+  }
+}
+
+.call-us__img {
+  @extend %display-none;
+  @include media-tablet {
+    display: block;
+    margin: 0 auto;
+  }
+  @include media-small-desktop {
+    margin-right: 0;
+  }
 }

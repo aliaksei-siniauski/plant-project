@@ -2,6 +2,10 @@
   display: flex;
 }
 
+%display-none {
+  display: none;
+}
+
 %flex-wrap {
   flex-wrap: wrap;
 }
@@ -28,7 +32,7 @@
 
 %text-style {
   font-family: $font-family-main;
-  @include font($main-size, $line-height-text);
+  @include font($second-size, $line-height-text-mb);
   color: $color-text-main;
 }
 

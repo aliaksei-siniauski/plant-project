@@ -16,7 +16,7 @@
           <h1 class="logo__title">Plants</h1>
         </a>
         <!-- close logo -->
-        <nav class="navigation">
+        <nav class="navigation header__navigation">
           <ul class="list">
             <li class="list__item">
               <a class="list__link list__link--active" href="#">Home</a>
@@ -37,18 +37,20 @@
           <!-- close list -->
         </nav>
         <!-- close navigation -->
+        <div class="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </div>
+        <!-- close burger -->
       </div>
       <!-- close contaienr -->
     </header>
+    <!-- close headder -->
     <main>
       <section class="hero">
         <div class="container hero__container">
-          <img
-            src="src/images/leafs/leafs.png"
-            width="448.8px"
-            height="407.36px"
-            alt="leafs"
-          />
           <div class="hero__content">
             <h2 class="hero__title">
               We grow <span class="title--accent">plants</span> and give you
@@ -62,21 +64,26 @@
             <div class="hero__button">
               <button class="button">LEARN MORE</button>
             </div>
+            <!-- close hero button -->
           </div>
           <!-- close hero content -->
+          <img
+            class="hero__img"
+            src="src/images/leafs/desktop/leafs.png"
+            alt="leafes"
+          />
         </div>
         <!-- close container -->
       </section>
       <!-- close hero -->
-      <section id="about-us" class="about-us">
-        <div class="container about-us__container">
-          <div class="about-us__content">
-            <h3 class="about-us__title">
-              <span class="title--accent">We are</span> professional
-              experienced<br />
+      <section id="about" class="about">
+        <div class="container about__container">
+          <div class="about__content">
+            <h3 class="about__title">
+              <span class="title--accent">We are</span> professional experienced
               <span class="title--accent">gardeners</span>
             </h3>
-            <p class="about-us__text">
+            <p class="about__text">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -84,21 +91,33 @@
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
+            <!-- about text -->
           </div>
-          <img
-            class="about-us__img"
-            src="src/images/houseplant/houseplant-1.png"
-            width="464px"
-            height="479px"
-            alt="houseplant"
-          />
-          <!-- close about-us contnet -->
+          <picture class="about__picture">
+            <source
+              media="(min-width: 1025px )"
+              srcset="src/images/leafs/desktop/houseplant.png"
+            />
+            <source
+              media="(min-width: 600px )"
+              srcset="src/images/leafs/tablet/houseplant.png"
+            />
+            <source
+              media="(min-width:320px)"
+              srcset="src/images/leafs/mobile/houseplant.png"
+            />
+            <img
+              class="about__img"
+              src="src/images/leafs/mobile/houseplant.png"
+            />
+          </picture>
+          <!-- about content -->
         </div>
         <!-- close container -->
       </section>
-      <!-- close about us -->
+      <!-- about -->
       <section id="service" class="service">
-        <div class="container service__container">
+        <div class="container">
           <div class="service__top">
             <h3 class="service__title">
               Service and our<br />
@@ -109,18 +128,30 @@
               <button class="button button--colored">Lawn</button>
               <button class="button button--colored">Planting</button>
             </div>
-            <!-- close servives buttons -->
+            <!-- service buttons -->
           </div>
-          <!-- close service top -->
+          <!-- service__top -->
           <div class="services">
             <div class="service-item">
-              <img
-                class="service-item__img"
-                src="src/images/services/service-1.jpg"
-                width="329"
-                height="350"
-                alt="Garden care"
-              />
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-1.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="src/images/services/mobile/service-1.jpg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-1.jpg"
+                />
+                <img
+                  class="service-item__img"
+                  src="src/images/services/mobile/service-1.jpg"
+                  alt="garden care"
+                />
+              </picture>
               <div class="service-item__content">
                 <h4 class="service-item__title">Garden care</h4>
                 <p class="service-item__description">
@@ -132,13 +163,25 @@
             </div>
             <!-- close service item -->
             <div class="service-item">
-              <img
-                class="service-item__img"
-                src="src/images/services/service-2.jpg"
-                width="329"
-                height="350"
-                alt="Garden care"
-              />
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-2.jpg"
+                />
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="src/images/services/mobile/service-2.jpg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-2.jpg"
+                />
+                <img
+                  class="service-item__img"
+                  src="src/images/services/mobile/service-2.jpg"
+                  alt="planting"
+                />
+              </picture>
               <div class="service-item__content">
                 <h4 class="service-item__title">Planting</h4>
                 <p class="service-item__description">
@@ -150,13 +193,26 @@
             </div>
             <!-- close service item -->
             <div class="service-item">
-              <img
-                class="service-item__img"
-                src="src/images/services/service-3.jpg"
-                width="329"
-                height="350"
-                alt="Garden care"
-              />
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-3.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="src/images/services/mobile/service-3.jpg"
+                />
+
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-3.jpg"
+                />
+                <img
+                  class="service__img"
+                  src="src/images/services/mobile/service-3.jpg"
+                  alt="lawn care"
+                />
+              </picture>
               <div class="service-item__content">
                 <h4 class="service-item__title">Lawn care</h4>
                 <p class="service-item__description">
@@ -164,17 +220,33 @@
                 </p>
               </div>
               <!-- close service item content -->
-              <div class="service-item--opacity"></div>
+              <div class="service--opacity"></div>
             </div>
             <!-- close service item -->
             <div class="service-item">
-              <img
-                class="service-item__img"
-                src="src/images/services/service-4.jpg"
-                width="329"
-                height="350"
-                alt="Planting"
-              />
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="src/images/services/desktop/service-4.jpg"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-4.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="src/images/services/mobile/service-4.jpg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-4.jpg"
+                />
+                <img
+                  class="service__img"
+                  src="src/images/services/mobile/service-4.jpg"
+                  alt="planting"
+                />
+              </picture>
               <div class="service-item__content">
                 <h4 class="service-item__title">Planting</h4>
                 <p class="service-item__description">
@@ -182,17 +254,30 @@
                 </p>
               </div>
               <!-- close service item content -->
-              <div class="service-item--opacity"></div>
+              <div class="service--opacity"></div>
             </div>
             <!-- close service item -->
             <div class="service-item">
-              <img
-                class="service-item__img"
-                src="src/images/services/service-5.jpg"
-                width="329"
-                height="350"
-                alt="Garden caree"
-              />
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-5.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="src/images/services/mobile/service-5.jpg"
+                />
+
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-5.jpg"
+                />
+                <img
+                  class="service__img"
+                  src="src/images/services/mobile/service-5.jpg"
+                  alt="planting"
+                />
+              </picture>
               <div class="service-item__content">
                 <h4 class="service-item__title">Garden care</h4>
                 <p class="service-item__description">
@@ -200,17 +285,30 @@
                 </p>
               </div>
               <!-- close service item content -->
-              <div class="service-item--opacity"></div>
+              <div class="service--opacity"></div>
             </div>
             <!-- close service item -->
             <div class="service-item">
-              <img
-                class="service-item__img"
-                src="src/images/services/service-6.jpg"
-                width="329"
-                height="350"
-                alt="Plantings"
-              />
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-6.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="src/images/services/mobile/service-6.jpg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-6.jpg"
+                />
+
+                <img
+                  class="service__img"
+                  src="src/images/services/mobile/service-6.jpg"
+                  alt="planting"
+                />
+              </picture>
               <div class="service-item__content">
                 <h4 class="service-item__title">Planting</h4>
                 <p class="service-item__description">
@@ -222,96 +320,153 @@
             </div>
             <!-- close service item -->
           </div>
-          <!-- services -->
+          <!-- clsoe services -->
         </div>
-        <!-- close container -->
+        <!-- container -->
       </section>
       <!-- close service -->
       <section id="price" class="price">
         <div class="container price__container">
-          <div class="prices__wrapper">
-            <div class="prices">
-              <h3 class="prices__title">Prices</h3>
-              <div class="price-accordion">
-                <div class="price__item">
-                  <h4 class="price__plan">Basics</h4>
-                  <span class="icon--cicle">
-                    <span class="icon icon--arrow-down"></span>
-                  </span>
-                  <!-- close price icon -->
+          <h3 class="price__title">Prices</h3>
+          <div class="price__content">
+            <div class="prices-block">
+              <div class="prices">
+                <div class="price-item">
+                  <h4 class="price-item__title">Basics</h4>
+                  <div class="accordion price-accordion">
+                    <span class="accordion-cicle price__accordion-cicle">
+                      <span class="icon icon--arrow-down"></span>
+                    </span>
+                    <!-- cicle -->
+                  </div>
+                  <!-- accordion -->
                 </div>
-                <!-- close price item" -->
-                <div class="price__item">
-                  <h4 class="price__plan">Standard</h4>
-                  <span class="icon--cicle">
-                    <span class="icon icon--arrow-down"></span>
-                  </span>
-                  <!-- close price icon -->
+                <!-- close price-item -->
+                <div class="price-item">
+                  <h4 class="price-item__title">Standard</h4>
+                  <div class="accordion price-accordion">
+                    <span class="accordion-cicle price__accordion-cicle">
+                      <span class="icon icon--arrow-down"></span>
+                    </span>
+                    <!-- cicle -->
+                  </div>
+                  <!-- accordion -->
                 </div>
-                <div class="price__item">
-                  <h4 class="price__plan">Pro care</h4>
-                  <span class="icon--cicle">
-                    <span class="icon icon--arrow-down"></span>
-                  </span>
-                  <!-- close price icon -->
+                <!-- close price-item -->
+                <div class="price-item">
+                  <h4 class="price-item__title">Pro care</h4>
+                  <div class="accordion price-accordion">
+                    <span class="accordion-cicle price__accordion-cicle">
+                      <span class="icon icon--arrow-down"></span>
+                    </span>
+                    <!-- cicle -->
+                  </div>
+                  <!-- accordion -->
                 </div>
+                <!-- close price-item -->
               </div>
-              <!-- close price  -->
+              <!-- close prices -->
             </div>
-            <!-- close prices  -->
+            <!-- prices-block -->
             <div class="call-us">
               <p class="call-us__text">
                 Our best <span class="title--accent">gardeners</span> are ready
                 to help you
               </p>
-              <!-- close call-us text -->
+              <!-- call-us__text -->
               <div class="call-us__button">
-                <button class="button button--color">Contact us</button>
+                <button class="button button--colored">Contact us</button>
               </div>
-              <!-- close call-us button -->
-              <img
-                class="call-us__img"
-                src="src/images/leafs/leafs-2.png"
-                width="284"
-                height="318"
-                alt="leafs-2"
-              />
+              <!-- call us button -->
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="src/images/leafs/desktop/leafs-2.png"
+                />
+                <source
+                  media="(min-width: 1025px )"
+                  srcset="src/images/leafs/tablet/leafs-2.png"
+                />
+                <source media="(min-width: 600px )"
+                srcset="src/images/leafs/tablet/leafs-2.png"" /> <img
+                class="call-us__img" href="src/images/leafs/tablet/leafs-2.png""
+                alt="leaf" />
+              </picture>
             </div>
-            <!-- close call-us -->
+            <!-- call us -->
           </div>
-          <!-- close price wrapper -->
+          <!-- price__content -->
         </div>
         <!-- close container -->
       </section>
+      <!-- close price -->
       <section id="contacts" class="contacts">
         <div class="container contacts__container">
-          <img
-            class="contacts__img"
-            src="src/images/contact-wooman.png"
-            alt="contact-woman"
-          />
-          <div class="contacts__content">
-            <h3 class="contacts__title title--accent">Contact us</h3>
-
-            <div class="contacts__drop-down">
-              <div class="contacts__item">
-                <span class="contacts__city">City</span>
-                <span class="icon--cicle contacts__icon--cicle">
-                  <span class="icon icon--arrow-down"></span>
-                </span>
+          <h3 class="contacts__title title--accent">Contact us</h3>
+          <div class="contacts__wrapper">
+            <div class="contacts__content">
+              <div class="form-group">
+                <div class="dropdown contacts__dropdown">
+                  <button class="dropdown__button">City</button>
+                  <ul class="dropdown__list dropdown__list--hidden">
+                    <li
+                      class="dropdown__list-item"
+                      data-value="Canandaigua, NY"
+                    >
+                      Canandaigua, NY
+                    </li>
+                    <li class="dropdown__list-item" data-value="New York">
+                      New York City
+                    </li>
+                    <li class="dropdown__list-item" data-value="Yonkers, NY">
+                      Yonkers, NY
+                    </li>
+                    <li class="dropdown__list-item" data-value="Sherrill, NY">
+                      Sherrill, NY
+                    </li>
+                  </ul>
+                  <!-- close dropdown__list -->
+                  <input
+                    class="dropdown__input-hidden"
+                    type="text"
+                    name="select-city"
+                    value=""
+                  />
+                </div>
+                <!-- dropdown -->
               </div>
-              <!-- close contacts item -->
+              <!-- close form group-->
             </div>
-            <!-- close contacts drop-down -->
+            <!-- close contacts content -->
+            <picture class="contact__picture">
+              <source
+                media="(min-width: 1025px )"
+                srcset="src/images/contact/desktop/woman.png"
+              />
+              <source
+                media="(min-width: 600px )"
+                srcset="src/images/contact/tablet/contact-woman.png"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="src/images/contact/mobile/contact-woman.png"
+              />
+              <img
+                class="contacts__img"
+                src="src/images/contact/mobile/contact-woman.png"
+                alt="woman"
+              />
+            </picture>
           </div>
-          <!-- close contacts__content -->
+          <!-- contacts__wrapper -->
         </div>
-        <!-- close container -->
+        <!-- container -->
       </section>
+      <!-- contact -->
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="layout-3-column">
+        <div class="footer__navigation layout-3-column">
           <div class="footer-date">
             <span class="footer-date__item">©</span>
             <span class="footer-date__item">2022</span>
@@ -327,7 +482,7 @@
           <div class="footer-social">
             <ul class="social-list">
               <li class="social-list__item">
-                <a href="https://www.instagram.com">
+                <a class="social-list__link" href="https://www.instagram.com">
                   <img
                     class="footer-icon icon"
                     src="src/icons/social/inst.svg"
@@ -336,7 +491,7 @@
                 </a>
               </li>
               <li class="social-list__item">
-                <a href="https://about.facebook.com/">
+                <a class="social-list__link" href="https://about.facebook.com/">
                   <img
                     class="footer-icon icon"
                     src="src/icons/social/meta.svg"
@@ -345,7 +500,7 @@
                 </a>
               </li>
               <li class="social-list__item">
-                <a href="https://twitter.com/">
+                <a class="social-list__link" href="https://twitter.com/">
                   <img
                     class="footer-icon icon"
                     src="src/icons/social/twitter.svg"
@@ -354,7 +509,7 @@
                 </a>
               </li>
               <li class="social-list__item">
-                <a href="https://pinterest.com/">
+                <a class="social-list__link" href="https://pinterest.com/">
                   <img
                     class="footer-icon icon"
                     src="src/icons/social/pinterest.svg"
@@ -363,11 +518,14 @@
                 </a>
               </li>
             </ul>
+            <!-- close social-list -->
           </div>
+          <!-- close footer-social -->
         </div>
-        <!-- close footer-social -->
+        <!-- close layout-3-column-->
       </div>
+      <!-- close container -->
     </footer>
   </body>
-  <script src="src/index.js"></script>
+  <script type="module" src="src/index.js"></script>
 </html>

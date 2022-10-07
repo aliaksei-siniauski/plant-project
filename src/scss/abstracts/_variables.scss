@@ -23,17 +23,26 @@ $main-size: 2rem;
 $main-size-mobile: 2.5rem;
 $second-size: 1.6rem;
 $accent-size: 4.5rem;
+$accent-size-tablet: 3.5rem;
 $section-size: 4rem;
+$button-mb-size: 1.4rem;
 $accordion-description-size: 1rem;
+$text-size-mb: 1.5rem;
 
 /* Line height */
-$line-height-main: 2rem;
-$line-height-text: 3.5rem;
-$line-height-second: 5rem;
-$line-height-header: 5.2rem;
-$line-height-tag: 2.6rem;
-$line-height-logo: 2.1rem;
 
+$line-height-main: 2rem;
+$line-height-header-mb: 3.3rem;
+$line-height-header: 5.2rem;
+$line-height-header-tablet: 4.6rem;
+$line-height-text: 3.5rem;
+$line-height-text-tablet: 3rem;
+$line-height-second: 5rem;
+$line-height-tag: 2.6rem;
+$line-height-text-mb: 2.5rem;
+$line-height-logo: 2.1rem;
+$line-height-dropdown-item: 4rem;
+$line-height-header-price: 4.2rem;
 /* Font Familly */
 
 $font-family-main: "Inter", sans-serif;
@@ -54,8 +63,18 @@ $border-radius-card: 2rem;
 /* Padding, Margin */
 
 $padding-space: 1.5rem;
-$header-padding: 5rem;
+$header-padding-desktop: 5rem;
 $nav-padding: 4.4rem;
 
 /* Container width */
-$content-width: 1252px;
+
+$content-desktop-width: 1252px;
+$content-tablet-width: 698px;
+$content-mobile-width: 360px;
+
+/* Media quaries */
+
+$mobile-width: 320px;
+$tablet-width: 600px;
+$small-desktop-width: 1025px;
+$desktop-width: 1440px;

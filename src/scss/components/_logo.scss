@@ -1,12 +1,17 @@
 .logo {
   @extend %flex;
-  @extend %al-items-center;
   @extend %transition;
-  font-size: $second-size;
   &:hover {
     .logo__title {
-      @extend %transition;
       color: $color-accent;
+      @extend %transition;
     }
+  }
+}
+
+.logo__title {
+  padding: 0.35rem 0 0;
+  @include media-small-desktop {
+    padding: 0;
   }
 }

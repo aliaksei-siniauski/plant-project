@@ -1,21 +1,32 @@
 .button {
-  padding: 1.2rem 2.6rem;
+  display: inline-block;
+  padding: 0.5rem 1.36rem;
   color: $color-dark;
   font-family: $font-family-main;
-  @include font($main-size, $line-height-main);
+  @include font($button-mb-size, $line-height-main);
   background: transparent;
   border: 2px solid $color-hover;
   border-radius: $border-radius-button;
   @extend %cursor-pointer;
   @extend %transition;
+  @include media-tablet {
+    padding: 1.15rem 2.9rem 1rem 2.1rem;
+    @include font($second-size, $line-height-main);
+  }
+
   &:hover {
     color: $color-light;
     background: $color-hover;
   }
-  &--color {
-    font-weight: $bold;
+
+  &--colored {
+    padding: 0.8rem 2.8rem 0.7rem;
     color: $color-hover;
     border: 1px solid $color-hover;
     border-radius: $border-radius-tag;
+    @include media-tablet {
+      padding: 1.2rem 4rem;
+      @include font($main-size, $line-height-tag);
+    }
   }
 }
