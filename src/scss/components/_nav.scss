@@ -1,12 +1,15 @@
+.header__navigation {
+  @extend %display-none;
+  @include media-tablet {
+    display: block;
+    padding: 0 8px 0;
+  }
+}
+
 .list {
   @extend %flex;
   @extend %al-items-center;
-}
-
-.list__item {
-  &:not(:last-child) {
-    padding: 0 $nav-padding 0 0;
-  }
+  gap: 4.8rem;
 }
 
 .list__link {

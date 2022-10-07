@@ -28,12 +28,14 @@
 @import "components/burger";
 @import "components/section";
 @import "components/collumns";
+@import "components/accordion";
+@import "components/dropdown";
 
 /* Layout  */
 
 @import "layout/header";
 @import "layout/hero";
-@import "layout/about-us";
+@import "layout/about";
 @import "layout/service";
 @import "layout/price";
 @import "layout/contacts";

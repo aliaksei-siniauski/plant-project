@@ -1,45 +1,90 @@
 .service {
-  padding: 9.7rem 0 0;
+  padding: 3.4rem 0 2.5rem;
   background: $color-background-section;
-}
-
-.service__top {
-  @extend %flex;
-  @extend %al-items-center;
-  gap: 14rem;
-  padding: 0 0 9.7rem 0;
+  @include media-tablet {
+    padding: 6rem 0 6.3rem;
+  }
+  @include media-small-desktop {
+    padding: 3.5rem 0 12rem 0;
+  }
 }
 
 .service__title {
   color: $color-accent;
+  text-align: left;
+  @include media-tablet {
+    @include font($accent-size-tablet, $line-height-header-tablet);
+  }
+  @include media-small-desktop {
+    @include font($section-size, $line-height-header);
+  }
+}
+
+.service__top {
+  max-width: 252px;
+  width: 100%;
+  @extend %flex;
+  @extend %flex-wrap;
+  @extend %flex-column;
+  gap: 3.7rem;
+  @include media-tablet {
+    max-width: 560px;
+    gap: 4.2rem;
+  }
+  @include media-small-desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    gap: 16rem;
+    margin-right: auto;
+  }
 }
 
 .services__buttons {
-  & button {
-    padding: 1.2rem 4rem;
-    color: $color-hover;
-    &:not(:last-child) {
-      margin-right: 2.8rem;
+  @extend %flex;
+  @extend %flex-wrap;
+  > button {
+    width: 120px;
+    @include media-tablet {
+      width: 161px;
     }
+  }
+  gap: 1rem;
+  @include media-tablet {
+    gap: 3.8rem;
   }
 }
 
 .services {
   @extend %flex;
-  @extend %flex-wrap;
-  @extend %js-content-space-between;
-  gap: 5.5rem 0;
-  padding: 0 0 12rem 0;
+  @extend %flex-column;
+  @extend %al-items-center;
+  padding: 3.8rem 0 0;
+  gap: 3.6rem;
+  @include media-tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3.8rem 10.6rem;
+  }
+  @include media-small-desktop {
+    justify-content: space-between;
+    gap: 5.5rem 11.6rem;
+    padding: 8.8rem 0 0;
+  }
 }
 
 .service-item {
+  width: 280px;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: $border-radius-card;
   @extend %transition;
   @extend %cursor-pointer;
   overflow-x: hidden;
-
+  @include media-small-desktop {
+    width: 330px;
+  }
   &:hover {
     .service-item--opacity {
       @extend %transition;
@@ -54,11 +99,10 @@
       border: 0;
       border-radius: 0;
       z-index: 10;
-      transform: translateY(-87.5px);
+      transform: translateY(-86px);
       background: hsl(0, 16%, 10%);
       color: $color-drop-btn-active;
     }
-
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
       rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -81,20 +125,33 @@
 }
 
 .service-item__content {
-  max-width: 330px;
-  padding: 1rem 0 3.6rem;
+  padding: 1rem 0 1.2rem;
   @extend %text-center;
   border: 1px solid $color-border-radius;
   border-radius: 0px 0px $border-radius-card $border-radius-card;
   transition: transform 2s;
+  text-align: center;
 }
 
 .service-item__title {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.5rem;
   color: $color-hover;
+  text-align: center;
 }
 
 .service-item__description {
+  max-width: 213px;
+  width: 100%;
+  margin: 0 auto;
   font-size: $second-size;
+  text-align: left;
   color: $color-text-second;
+  @include media-tablet {
+    padding: 0 0 3px 5px;
+  }
+  @include media-small-desktop {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 0 2rem;
+  }
 }

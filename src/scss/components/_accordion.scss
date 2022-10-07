@@ -1,0 +1,29 @@
+.accordion {
+}
+
+.accordion-cicle {
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $color-border-radius;
+  border-radius: 20px;
+}
+
+.price__accordion-cicle {
+  background: $color-drop-down;
+  .icon--arrow-down {
+    filter: brightness(0) saturate(100%) invert(44%) sepia(3%) saturate(2%)
+      hue-rotate(2deg) brightness(98%) contrast(91%);
+  }
+}
+
+.contacts__accordion-cicle {
+  background: $color-drop-btn-unactive;
+  .icon--arrow-down {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(3%) saturate(180%)
+      hue-rotate(116deg) brightness(123%) contrast(100%);
+  }
+}

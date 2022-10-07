@@ -1,19 +1,35 @@
 h1 {
-  @include font($main-size, $line-height-logo);
+  @include font($second-size, $line-height-logo);
   color: $color-dark;
 }
 
 h2 {
-  @include font($accent-size, $line-height-second, $bold);
+  @include font($main-size-mobile, $line-height-text, $bold);
+  @include media-tablet {
+    @include font($accent-size-tablet, $line-height-second, $bold);
+  }
+  @include media-desktop {
+    @include font($accent-size, $line-height-second, $bold);
+  }
 }
 
 h3 {
   @extend %font-add;
-  @include font($section-size, $line-height-header);
+  @include font($main-size-mobile, $line-height-header-mb);
+  @extend %text-center;
+  @include media-tablet {
+    @include font($accent-size-tablet, $line-height-header-tablet);
+  }
+  @include media-desktop {
+    @include font($section-size, $line-height-header);
+  }
 }
 
 h4 {
   @extend %font-add;
-  @include font($main-size, $line-height-main, $bold);
+  color: $color-dark;
+  @include media-tablet {
+    @include font($main-size, $line-height-main, $bold);
+  }
   color: $color-dark;
 }
