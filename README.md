@@ -4,20 +4,20 @@
 
 ## Project Description:
 
-Planet responsive and interactive website
+Plants responsive and interactive website
 
 ## Highlights:
 
 - Semantic HTML
 - Readable and easy to maintain code
 - Responsive CSS
-- CSS animations
+- Accordion
+- Drop Down
 - Dynamically inserting content
 - Querying and manipulating with the DOM
 - Event listeners
-- Scroll and click events
+- Click events
 - Arrow functions
-- Classes
 - Modular JavaScript
 
 ## Features:
