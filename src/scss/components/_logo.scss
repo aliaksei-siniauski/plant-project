@@ -1,24 +1,17 @@
 .logo {
-  position: relative;
-  width: 82px;
-  min-height: 52px;
   @extend %flex;
-  @extend %flex-column;
-  @extend %al-items-center;
-  @extend %js-content-center;
-  border: 1px solid $color-light;
-  $border-radius: $logo-radius;
-  @extend %cursor-pointer;
-  @include media-tablet {
-    min-height: auto;
+  @extend %transition;
+  &:hover {
+    .logo__title {
+      color: $color-accent;
+      @extend %transition;
+    }
   }
 }
 
 .logo__title {
-  padding: 0.2rem 0 0;
-  color: $color-light;
-  @extend %text-center;
-  @include media-tablet {
-    @include font($logo-size-mb, $line-height-logo-mb);
+  padding: 0.35rem 0 0;
+  @include media-small-desktop {
+    padding: 0;
   }
 }

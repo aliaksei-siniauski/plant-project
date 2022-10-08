@@ -1,17 +1,12 @@
 .container {
-  max-width: $content-width;
+  max-width: $content-mobile-width;
   margin: 0 auto;
-  padding-inline: $inline-padding-content;
-
-  @include media-small-desktop {
-    max-width: $content-small-desktop;
-  }
-
+  padding-inline: $padding-space;
   @include media-tablet {
-    max-width: $content-tablet;
+    max-width: $content-tablet-width;
   }
-  @include media-mobile-big {
-    max-width: $content-mobile;
-    padding-inline: 1rem;
+
+  @include media-desktop {
+    max-width: $content-desktop-width;
   }
 }

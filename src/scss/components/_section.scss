@@ -1,16 +1,3 @@
-.position__img {
-  position: absolute;
-}
-
-.hide-text {
-  display: none;
-  @include media-small-desktop {
-    display: contents;
-  }
-}
-
-.hide-for-sm-desktop {
-  @include media-small-desktop {
-    display: none;
-  }
+.title--accent {
+  color: $color-accent;
 }

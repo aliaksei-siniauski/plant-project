@@ -4,781 +4,527 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="src/icons/animals.ico" />
+    <title>Plants</title>
+    <link rel="shortcut icon" href="src/icons/plant.ico" type="image/x-icon" />
     <link rel="stylesheet" href="src/scss/main.css" />
-    <title>Online-Zoo</title>
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="index.html" class="logo header__logo">
+        <a class="logo" href="index.html">
           <span class="icon icon--logo"></span>
-          <h1 class="logo__title">PetStory online</h1>
+          <h1 class="logo__title">Plants</h1>
         </a>
-        <!-- logo -->
-        <nav class="navigation header__nav">
-          <ul class="list header__list">
+        <!-- close logo -->
+        <nav class="navigation header__navigation">
+          <ul class="list">
             <li class="list__item">
-              <a href="#" class="list__link list__link--active">About</a>
+              <a class="list__link list__link--active" href="#">Home</a>
             </li>
             <li class="list__item">
-              <a href="#" class="list__link">Map</a>
+              <a class="list__link" href="#about-us">About us</a>
             </li>
             <li class="list__item">
-              <a href="#" class="list__link">Zoos</a>
+              <a class="list__link" href="#service">Service</a>
             </li>
             <li class="list__item">
-              <a href="donate.html" class="list__link">Donate</a>
+              <a class="list__link" href="#price">Price</a>
             </li>
             <li class="list__item">
-              <a href="#contacts" class="list__link">Contact us</a>
+              <a class="list__link" href="#contacts">Contacts</a>
             </li>
           </ul>
+          <!-- close list -->
         </nav>
-        <!-- close nav -->
-        <div class="header-copyright">
-          <a
-            class="copyright-auther"
-            href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
-            target="_blank"
-            >Designed by ©</a
-          >
-        </div>
-        <!-- close header__copyright-auther -->
+        <!-- close navigation -->
         <div class="burger">
+          <span class="burger__line"></span>
           <span class="burger__line"></span>
           <span class="burger__line"></span>
           <span class="burger__line"></span>
         </div>
         <!-- close burger -->
       </div>
-      <!-- container -->
+      <!-- close contaienr -->
     </header>
+    <!-- close headder -->
     <main>
       <section class="hero">
         <div class="container hero__container">
-          <div class="hero__cicle"></div>
           <div class="hero__content">
             <h2 class="hero__title">
-              Watch your
-              <span class="hero__title--accent">favorite</span> animal online
+              We grow <span class="title--accent">plants</span> and give you
+              oxygen
             </h2>
+            <p class="hero__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <div class="hero__button">
+              <button class="button">LEARN MORE</button>
+            </div>
+            <!-- close hero button -->
           </div>
-          <!-- close hero__content -->
-          <div class="hero__button">
-            <button class="button button--main">watch online</button>
-          </div>
+          <!-- close hero content -->
+          <img
+            class="hero__img"
+            src="src/images/leafs/desktop/leafs.png"
+            alt="leafes"
+          />
         </div>
         <!-- close container -->
       </section>
-      <section class="backstage">
-        <div class="container backstage__container">
-          <div class="backstage__position-img"></div>
-          <picture class="backstage__picture">
+      <!-- close hero -->
+      <section id="about" class="about">
+        <div class="container about__container">
+          <div class="about__content">
+            <h3 class="about__title">
+              <span class="title--accent">We are</span> professional experienced
+              <span class="title--accent">gardeners</span>
+            </h3>
+            <p class="about__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+            <!-- about text -->
+          </div>
+          <picture class="about__picture">
             <source
-              media="(max-width: 1000px )"
-              srcset="src/images/bamboo/bamboo-sm-desktop.png"
+              media="(min-width: 1025px )"
+              srcset="src/images/leafs/desktop/houseplant.png"
             />
             <source
-              media="(max-width: 1600px )"
-              srcset="src/images/bamboo/bamboo-desktop.png"
+              media="(min-width: 600px )"
+              srcset="src/images/leafs/tablet/houseplant.png"
+            />
+            <source
+              media="(min-width:320px)"
+              srcset="src/images/leafs/mobile/houseplant.png"
             />
             <img
-              class="backstage__img"
-              src="src/images/bamboo/bamboo-desktop.png"
-              alt="bamboo-cap"
-            />
+              class="about__img"
+              src="src/images/leafs/mobile/houseplant.png"
             />
           </picture>
-          <div class="backstage__content">
-            <h2 class="backstage__title">
-              The Backstage of the Wilderness World.
-            </h2>
-            <p class="backstage__info">
-              The site was founded on the basis of a volunteer movement to
-              protect and care for animals.
-            </p>
-            <h4 class="backstage__subtitle">How it works</h4>
-            <p class="backstage__text">
-              The main goal is to help the animals, as well as the nature
-              reserves and zoos where they are kept. We are currently working on
-              video projects targeting pandas in China, eagles on an island near
-              Los Angeles, alligators in Florida and gorillas in the Congo.
-              These have a total of more than 1,500 mammals and reptiles.
-            </p>
-          </div>
-          <!-- close backstage__content -->
+          <!-- about content -->
         </div>
         <!-- close container -->
       </section>
-      <!-- close backstage -->
-      <section class="pets">
-        <div class="position__img pets__section-img--left"></div>
-        <div class="position__img pets__section-img--right"></div>
-        <div class="container container__pets">
-          <div class="pet-cards__wrapper">
-            <span class="arrow__button arrow-prev">
-              <span class="icon icon--arrow-prev"></span>
-            </span>
-            <div class="pet-cards">
-              <div class="pet-card panda-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 320px)"
-                    srcset="src/images/animal/mobile/animal-1.jpg"
-                  />
-                  <source
-                    media="(max-width: 414px)"
-                    srcset="src/images/animal/mobile/animal-1.jpg"
-                  />
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="src/images/animal/tablet/animal-1.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcset="src/images/animal/sm-desktop/animal-1.jpg"
-                  />
-                  <source
-                    media="(max-width: 1220px)"
-                    srcset="src/images/animal/desktop/animal-1.jpg"
-                  />
-                  <img
-                    class="petcard__img"
-                    src="src/images/animal/desktop/animal-1.jpg"
-                    alt="Pandas"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Giant Pandas</h5>
-                    <p class="pet-card__info">Native to Southwest China</p>
-                  </div>
-                  <!-- close pet-card description -->
-                  <span class="icon icon--banana card__icon"></span>
-                </div>
-                <!-- close pet-card content" -->
-              </div>
-              <!-- close  pet-card -->
-              <div class="pet-card eagle-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 320px)"
-                    srcset="src/images/animal/mobile/animal-2.jpg"
-                  />
-                  <source
-                    media="(max-width: 414px)"
-                    srcset="src/images/animal/mobile/animal-2.jpg"
-                  />
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="src/images/animal/tablet/animal-2.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcset="src/images/animal/sm-desktop/animal-2.jpg"
-                  />
-                  <source
-                    media="(max-width: 1220px)"
-                    srcset="src/images/animal/desktop/animal-2.jpg"
-                  />
-                  <img
-                    class="card__img"
-                    src="src/images/animal/desktop/animal-2.jpg"
-                    alt="Eagles"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Eagles</h5>
-                    <p class="pet-card__info">Native to South America</p>
-                  </div>
-                  <!-- close card__description -->
-                  <span class="icon icon--meet-fish card__icon"></span>
-                </div>
-                <!-- close description-wrapper" -->
-              </div>
-              <!-- close card -->
-              <div class="pet-card gorilas-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 320px)"
-                    srcset="src/images/animal/mobile/animal-3.jpg"
-                  />
-                  <source
-                    media="(max-width: 414px)"
-                    srcset="src/images/animal/mobile/animal-3.jpg"
-                  />
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="src/images/animal/tablet/animal-3.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcset="src/images/animal/sm-desktop/animal-4.jpg"
-                  />
-                  <source
-                    media="(max-width: 1220px)"
-                    srcset="src/images/animal/desktop/animal-3.jpg"
-                  />
-                  <img
-                    class="card__img"
-                    src="src/images/animal/desktop/animal-3.jpg"
-                    alt="gorillas"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Gorillas</h5>
-                    <p class="pet-card__info">Native to Congo</p>
-                  </div>
-                  <!-- close card__description -->
-                  <span class="icon icon--banana card__icon"></span>
-                </div>
-                <!-- close description-wrapper" -->
-              </div>
-              <!-- close card -->
-              <div class="pet-card sloth-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 1220px)"
-                    srcset="src/images/animal/desktop/animal-4.jpg"
-                  />
-                  <img
-                    class="card__img"
-                    src="src/images/animal/desktop/animal-4.jpg"
-                    alt="two-toed sloth"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Two-toed Sloth</h5>
-                    <p class="pet-card__info">Mesoamerica, South America</p>
-                  </div>
-                  <!-- close card__description -->
-                  <span class="icon icon--banana card__icon"></span>
-                </div>
-                <!-- close description-wrapper" -->
-              </div>
-              <!-- close card -->
-              <div class="pet-card cheetahs-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 1000px)"
-                    srcset="src/images/animal/sm-desktop/animal-3.jpg"
-                  />
-                  <source
-                    media="(max-width: 1220px)"
-                    srcset="src/images/animal/desktop/animal-5.jpg"
-                  />
-                  <img
-                    class="card__img"
-                    src="src/images/animal/desktop/animal-5.jpg"
-                    alt="cheetahs"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Cheetahs</h5>
-                    <p class="pet-card__info">Native to Africa</p>
-                  </div>
-                  <!-- close card__description -->
-                  <span class="icon icon--meet-fish card__icon"></span>
-                </div>
-                <!-- close description-wrapper" -->
-              </div>
-              <!-- close card -->
-              <div class="pet-card alligators-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 320px)"
-                    srcset="src/images/animal/mobile/animal-4.jpg"
-                  />
-                  <source
-                    media="(max-width: 414px)"
-                    srcset="src/images/animal/mobile/animal-4.jpg"
-                  />
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="src/images/animal/tablet/animal-4.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcset="src/images/animal/sm-desktop/animal-5.jpg"
-                  />
-                  <img
-                    src="src/images/animal/sm-desktop/animal-4.jpg"
-                    alt="Alligators"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Alligators</h5>
-                    <p class="pet-card__info">
-                      Native to Southeastern U<span class="add-symball">.</span
-                      ><span class="hide-text">nited </span>S<span
-                        class="add-symball"
-                        >.</span
-                      ><span class="hide-text">tates</span>
-                    </p>
-                  </div>
-                  <!-- pet content -->
-                  <span class="icon icon--meet-fish pet__icon"></span>
-                </div>
-                <!-- close pet content description -->
-              </div>
-              <!-- pet-alligators -->
-              <div class="pet-card penguins-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 1000px)"
-                    srcset="src/images/animal/sm-desktop/animal-6.jpg"
-                  />
-                  <img
-                    class="card__img"
-                    src="src/images/animal/desktop/animal-6.jpg"
-                    alt="penguins"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Penguins</h5>
-                    <p class="pet-card__info">Native to Antarctica</p>
-                  </div>
-                  <!-- close card__description -->
-                  <span class="icon icon--meet-fish card__icon"></span>
-                </div>
-                <!-- close description-wrapper" -->
-              </div>
-              <!-- close card -->
+      <!-- about -->
+      <section id="service" class="service">
+        <div class="container">
+          <div class="service__top">
+            <h3 class="service__title">
+              Service and our<br />
+              projects
+            </h3>
+            <div class="services__buttons">
+              <button class="button button--colored">Gargens</button>
+              <button class="button button--colored">Lawn</button>
+              <button class="button button--colored">Planting</button>
             </div>
-            <!-- close cards -->
-            <span class="arrow__button arrow-next">
-              <span class="icon icon--arrow-next"></span>
-            </span>
+            <!-- service buttons -->
           </div>
-          <!-- close cards__wrapper -->
-          <div class="pets__button">
-            <button class="button button--main">choose your favorite</button>
-          </div>
-        </div>
-        <!-- close container -->
-      </section>
-      <!-- close pets -->
-      <section class="pick-and-feed">
-        <div class="container pick-and-feed__container">
-          <div class="pick-and-feed__content">
-            <div class="pick-and-feed__text-info">
-              <h2 class="pick-and-feed__title">Pick and feed a friend</h2>
-              <p class="pick-and-feed__subtitle">
-                We know the animals bring you joy, and in these extraordinary
-                times, we’re glad.
-              </p>
-              <p class="pick-and-feed__accent">
-                During a time when the COVID-19 epidemic is touching all of our
-                lives, we’re proud and glad that people around the world find
-                joy in PatStory.
-              </p>
-              <p class="pick-and-feed__description">
-                Even though the zoo has reopened, we need you now more than ever
-                to help us deal with these problems. Please consider a gift to
-                our
-                <a class="support-fundation" href="donate.html"
-                  >Emergency Support Fund</a
-                >
-                .
-              </p>
-            </div>
-            <!-- pick-and-feed__text-info -->
-            <div class="how-it-works">
-              <h3 class="how-it-works__title">How it works</h3>
-              <div class="how-it-works__cards">
-                <div class="how-it-works__card">
-                  <span class="how-it-works__card-icon-block">
-                    <span class="icon icon--pay"></span>
-                  </span>
-                  <p class="how-it-works__card-title">Pay with card</p>
-                </div>
-                <!-- close how-it-works  card -->
-                <span
-                  class="icon icon--step how-it-works__icon-step--first"
-                ></span>
-                <div class="how-it-works__card">
-                  <span class="how-it-works__card-icon-block">
-                    <span class="icon icon--zoo"></span>
-                  </span>
-                  <p class="how-it-works__card-title">
-                    Payment goes to the zoo
-                  </p>
-                </div>
-                <!-- close how-it-works  card -->
-                <span
-                  class="icon icon--step how-it-works__icon-step--second"
-                ></span>
-                <div class="how-it-works__card">
-                  <span class="how-it-works__card-icon-block">
-                    <span class="icon icon--monkey"></span>
-                  </span>
-                  <p class="how-it-works__card-title">
-                    Your favourite animal gets delicious dish
-                  </p>
-                </div>
-                <!-- close how-it-works  card -->
-              </div>
-              <!-- close how-it-works cards -->
-            </div>
-            <!-- close how-it-works -->
-            <div class="pick-and-feed__button">
-              <a class="button button--main" href="donate.html"
-                >Feed a friend now</a
-              >
-            </div>
-          </div>
-          <!-- close pick-and-feet__content -->
-        </div>
-        <!-- close container -->
-      </section>
-      <section class="testimonials">
-        <div class="position__img testimonials__section-img"></div>
-        <div class="container testimonials__container">
-          <h3 class="testimonials__title">Testimonials</h3>
-          <div class="testimonial__inner">
-            <div class="testimonial">
-              <div class="testimonial__content">
-                <div class="user">
-                  <div class="user__content">
-                    <span class="user__avatar icon icon--user user-icon"></span>
-                    <div class="user__info">
-                      <h5 class="user__name">Michael John</h5>
-                      <span class="user__location">Local Austria</span>
-                      <span class="user__dot">•</span>
-                      <span class="user__day">Today</span>
-                    </div>
-                    <!-- close user__info -->
-                  </div>
-                  <!-- close user__content -->
-                </div>
-                <!-- close user -->
-                <p class="testimonial__text">
-                  The best online zoo I’ve met. My son delighted very much ljves
-                  to watch gouillas. Online zoo is one jf the ways to instill a
-                  love for animals.The best online zoo I’ve met. My son
-                  delighted very much ljves to watch gouillas. Online zoo is one
-                  jf the ways to instill a love for animals.<br />The best
-                  online zoo I’ve met. My son delighted very much ljves to watch
-                  gouillas. Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for <span class="hide-text"> animals.</span>
+          <!-- service__top -->
+          <div class="services">
+            <div class="service-item">
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-1.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="src/images/services/mobile/service-1.jpg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-1.jpg"
+                />
+                <img
+                  class="service-item__img"
+                  src="src/images/services/mobile/service-1.jpg"
+                  alt="garden care"
+                />
+              </picture>
+              <div class="service-item__content">
+                <h4 class="service-item__title">Garden care</h4>
+                <p class="service-item__description">
+                  Lorem Ipsum has been the industry
                 </p>
               </div>
-              <!-- close testimonial-content -->
+              <!-- close service item content -->
+              <div class="service-item--opacity"></div>
             </div>
-            <!-- close testimonial -->
-            <div class="testimonial">
-              <div class="testimonial__content">
-                <div class="user">
-                  <div class="user__content">
-                    <img
-                      class="user__avatar"
-                      src="src/images/testimonials/user-2.png"
-                      width="37"
-                      height="37"
-                      alt="Oskar Samborsky"
-                    />
-                    <div class="user__info">
-                      <h5 class="user__name">Oskar Samborsky</h5>
-                      <span class="user__location">Local Austria</span>
-                      <span class="user__dot">•</span>
-                      <span class="user__day">Yesterday</span>
-                    </div>
-                    <!-- close user__info -->
-                  </div>
-                  <!-- close user__content -->
-                </div>
-                <!-- close user -->
-                <p class="testimonial__text">
-                  Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for animals.The best online zoo I’ve met. My
-                  son delighted very much ljves to watch gouillas.<br />The best
-                  online zoo I’ve met. My son delighted very much ljves to watch
-                  gouillas. Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for<span class="hide-text">
-                    >animals. The best online zoo I’ve met. My son delighted
-                    very much ljves to watch gouillas. Online zoo is one jf the
-                    ways to instill a love for animals.The best online zoo I’ve
-                    met. My son delighted very much ljves to watch gouillas.
-                    Online zoo is one jf the ways to instill a love for
-                    animals.</span
-                  >
+            <!-- close service item -->
+            <div class="service-item">
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-2.jpg"
+                />
+                <source
+                  media="(min-width: 1000px)"
+                  srcset="src/images/services/mobile/service-2.jpg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-2.jpg"
+                />
+                <img
+                  class="service-item__img"
+                  src="src/images/services/mobile/service-2.jpg"
+                  alt="planting"
+                />
+              </picture>
+              <div class="service-item__content">
+                <h4 class="service-item__title">Planting</h4>
+                <p class="service-item__description">
+                  Lorem Ipsum has been the industry
                 </p>
               </div>
-              <!-- close testimonial-content -->
+              <!-- close service item content -->
+              <div class="service-item--opacity"></div>
             </div>
-            <!-- close testimonial -->
-            <div class="testimonial testimonial-sm-desktop">
-              <div class="testimonial__content">
-                <div class="user">
-                  <div class="user__content">
-                    <img
-                      class="user__avatar"
-                      src="src/images/testimonials/user-4.png"
-                      width="37"
-                      height="37"
-                      alt="Oskar Samborsky"
-                    />
-                    <div class="user__info">
-                      <h5 class="user__name">Oska Samborska</h5>
-                      <span class="user__location">Local Austria</span>
-                      <span class="user__dot">•</span>
-                      <span class="user__day">Yesterday</span>
-                    </div>
-                    <!-- close user__info -->
-                  </div>
-                  <!-- close user__content -->
-                </div>
-                <!-- close user -->
-                <p class="testimonial__text">
-                  Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for animals.The best online zoo I’ve met. My
-                  son delighted very much ljves to watch gouillas. <br />
+            <!-- close service item -->
+            <div class="service-item">
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-3.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="src/images/services/mobile/service-3.jpg"
+                />
 
-                  The best online zoo I’ve met. My son delighted very much ljves
-                  to watch gouillas. Online zoo is one jf the ways to instill a
-                  love for animals.The best online zoo I’ve met. My son
-                  delighted very much ljves to watch gouillas. Online zoo is one
-                  jf the ways to instill a love for animals.
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-3.jpg"
+                />
+                <img
+                  class="service__img"
+                  src="src/images/services/mobile/service-3.jpg"
+                  alt="lawn care"
+                />
+              </picture>
+              <div class="service-item__content">
+                <h4 class="service-item__title">Lawn care</h4>
+                <p class="service-item__description">
+                  Lorem Ipsum has been the industry
                 </p>
               </div>
-              <!-- testimonial content -->
+              <!-- close service item content -->
+              <div class="service--opacity"></div>
             </div>
-            <!-- close testimonial -->
-            <div class="testimonial">
-              <div class="testimonial__content">
-                <div class="user">
-                  <div class="user__content">
-                    <img
-                      class="user__avatar"
-                      src="src/images/testimonials/user-3.png"
-                      width="37"
-                      height="37"
-                      alt="Fredericka Michelin"
-                    />
-                    <div class="user__info">
-                      <h5 class="user__name">Fredericka Michelin</h5>
-                      <span class="user__location">Local Austria</span>
-                      <span class="user__dot">•</span>
-                      <span class="user__day">Yesterday</span>
-                    </div>
-                    <!-- close user__info -->
+            <!-- close service item -->
+            <div class="service-item">
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="src/images/services/desktop/service-4.jpg"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-4.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="src/images/services/mobile/service-4.jpg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-4.jpg"
+                />
+                <img
+                  class="service__img"
+                  src="src/images/services/mobile/service-4.jpg"
+                  alt="planting"
+                />
+              </picture>
+              <div class="service-item__content">
+                <h4 class="service-item__title">Planting</h4>
+                <p class="service-item__description">
+                  Lorem Ipsum has been the industry
+                </p>
+              </div>
+              <!-- close service item content -->
+              <div class="service--opacity"></div>
+            </div>
+            <!-- close service item -->
+            <div class="service-item">
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-5.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="src/images/services/mobile/service-5.jpg"
+                />
+
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-5.jpg"
+                />
+                <img
+                  class="service__img"
+                  src="src/images/services/mobile/service-5.jpg"
+                  alt="planting"
+                />
+              </picture>
+              <div class="service-item__content">
+                <h4 class="service-item__title">Garden care</h4>
+                <p class="service-item__description">
+                  Lorem Ipsum has been the industry
+                </p>
+              </div>
+              <!-- close service item content -->
+              <div class="service--opacity"></div>
+            </div>
+            <!-- close service item -->
+            <div class="service-item">
+              <picture class="service-item__picture">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="src/images/services/desktop/service-6.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="src/images/services/mobile/service-6.jpg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="src/images/services/mobile/service-6.jpg"
+                />
+
+                <img
+                  class="service__img"
+                  src="src/images/services/mobile/service-6.jpg"
+                  alt="planting"
+                />
+              </picture>
+              <div class="service-item__content">
+                <h4 class="service-item__title">Planting</h4>
+                <p class="service-item__description">
+                  Lorem Ipsum has been the industry
+                </p>
+              </div>
+              <!-- close service item content -->
+              <div class="service-item--opacity"></div>
+            </div>
+            <!-- close service item -->
+          </div>
+          <!-- clsoe services -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- close service -->
+      <section id="price" class="price">
+        <div class="container price__container">
+          <h3 class="price__title">Prices</h3>
+          <div class="price__content">
+            <div class="prices-block">
+              <div class="prices">
+                <div class="price-item">
+                  <h4 class="price-item__title">Basics</h4>
+                  <div class="accordion price-accordion">
+                    <span class="accordion-cicle price__accordion-cicle">
+                      <span class="icon icon--arrow-down"></span>
+                    </span>
+                    <!-- cicle -->
                   </div>
-                  <!-- close user__content -->
+                  <!-- accordion -->
                 </div>
-                <!-- close user -->
-                <p class="testimonial__text">
-                  <span class="hide-for-sm-desktop"
-                    >The best online zoo I’ve met.</span
-                  >My son delighted very much ljves to watch gouillas. Online
-                  zoo is one jf the ways to instill a love for animals.The best
-                  online zoo I’ve met. My son delighted very much ljves to watch
-                  gouillas. Online zoo is one jf the ways to instill a love for
-                  animals.<br class="hide-for-sm-desktop" /><span
-                    class="hide-for-sm-desktop"
-                    >The best online zoo I’ve met. >My son delighted very much
-                    ljves to watch gouillas. Online zoo is one jf the ways to
-                    instill a love for<br />
-                    animals.</span
-                  >The best online zoo I’ve met.<br />The best online zoo I’ve
-                  met. My son delighted very much ljves to<span
-                    class="hide-text"
-                  >
-                    watch gouillas. Online zoo is one jf the ways to instill a
-                    love for animals.The best online zoo I’ve met. My son
-                    delighted very much ljves to watch gouillas. Online zoo is
-                    one jf the ways to instill a love for animals.</span
-                  >
-                </p>
-              </div>
-              <!-- close testimonial-content -->
-            </div>
-            <!-- close testimonial -->
-            <div class="testimonial">
-              <div class="testimonial__content">
-                <div class="user">
-                  <div class="user__content">
-                    <img
-                      class="user__avatar"
-                      src="src/images/testimonials/user-4.png"
-                      width="37"
-                      height="37"
-                      alt="Mila Riksha"
-                    />
-                    <div class="user__info">
-                      <h5 class="user__name">Mila Riksha</h5>
-                      <span class="user__location">Local Austria</span>
-                      <span class="user__dot">•</span>
-                      <span class="user__day">Yesterday</span>
-                    </div>
-                    <!-- close user__info -->
+                <!-- close price-item -->
+                <div class="price-item">
+                  <h4 class="price-item__title">Standard</h4>
+                  <div class="accordion price-accordion">
+                    <span class="accordion-cicle price__accordion-cicle">
+                      <span class="icon icon--arrow-down"></span>
+                    </span>
+                    <!-- cicle -->
                   </div>
-                  <!-- close user__content -->
+                  <!-- accordion -->
                 </div>
-                <!-- close user -->
-                <p class="testimonial__text">
-                  My son delighted very much ljves to watch gouillas. Online zoo
-                  is one jf the ways to instill a love for animals.The best
-                  online zoo I’ve met. My son delighted very much ljves to watch
-                  gouillas. Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for animals.The best online zoo I’ve met. My
-                  son delighted very much ljves to watch gouillas. <br />The
-                  best online zoo I’ve met. My son delighted very much ljves to
-                  watch gouillas. Online zoo is one jf<span class="hide-text">
-                    the ways to instill a love for animals.The best online zoo
-                    I’ve met. My son delighted very much ljves to watch
-                    gouillas. Online zoo is one jf the ways to instill a love
-                    for animals.</span
-                  >
-                </p>
+                <!-- close price-item -->
+                <div class="price-item">
+                  <h4 class="price-item__title">Pro care</h4>
+                  <div class="accordion price-accordion">
+                    <span class="accordion-cicle price__accordion-cicle">
+                      <span class="icon icon--arrow-down"></span>
+                    </span>
+                    <!-- cicle -->
+                  </div>
+                  <!-- accordion -->
+                </div>
+                <!-- close price-item -->
               </div>
-              <!-- close testimonial-content -->
+              <!-- close prices -->
             </div>
-            <!-- close testimonial -->
+            <!-- prices-block -->
+            <div class="call-us">
+              <p class="call-us__text">
+                Our best <span class="title--accent">gardeners</span> are ready
+                to help you
+              </p>
+              <!-- call-us__text -->
+              <div class="call-us__button">
+                <button class="button button--colored">Contact us</button>
+              </div>
+              <!-- call us button -->
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="src/images/leafs/desktop/leafs-2.png"
+                />
+                <source
+                  media="(min-width: 1025px )"
+                  srcset="src/images/leafs/tablet/leafs-2.png"
+                />
+                <source media="(min-width: 600px )"
+                srcset="src/images/leafs/tablet/leafs-2.png"" /> <img
+                class="call-us__img" href="src/images/leafs/tablet/leafs-2.png""
+                alt="leaf" />
+              </picture>
+            </div>
+            <!-- call us -->
           </div>
-          <!-- close testimonials__inner -->
-          <div class="scroll testimonials__scroll">
-            <span class="scroll__line"></span>
-            <input type="range" class="scroll__line--progress" />
-          </div>
-          <div class="testimonials__button">
-            <button class="button button--second">leave feedback</button>
-          </div>
+          <!-- price__content -->
         </div>
         <!-- close container -->
       </section>
-    </main>
-    <footer id="contacts" class="footer">
-      <div class="container footer__container">
-        <div class="footer__content">
-          <a href="index.html" class="logo footer__logo">
-            <span class="icon icon--logo"></span>
-            <p class="logo__title">PetStory online</p>
-          </a>
-          <!-- close logo -->
-          <div class="footer__button">
-            <a class="button button--second" href="donate.html"
-              >donate for volunteers</a
-            >
+      <!-- close price -->
+      <section id="contacts" class="contacts">
+        <div class="container contacts__container">
+          <h3 class="contacts__title title--accent">Contact us</h3>
+          <div class="contacts__wrapper">
+            <div class="contacts__content">
+              <div class="form-group">
+                <div class="dropdown contacts__dropdown">
+                  <button class="dropdown__button">City</button>
+                  <ul class="dropdown__list dropdown__list--hidden">
+                    <li
+                      class="dropdown__list-item"
+                      data-value="Canandaigua, NY"
+                    >
+                      Canandaigua, NY
+                    </li>
+                    <li class="dropdown__list-item" data-value="New York">
+                      New York City
+                    </li>
+                    <li class="dropdown__list-item" data-value="Yonkers, NY">
+                      Yonkers, NY
+                    </li>
+                    <li class="dropdown__list-item" data-value="Sherrill, NY">
+                      Sherrill, NY
+                    </li>
+                  </ul>
+                  <!-- close dropdown__list -->
+                  <input
+                    class="dropdown__input-hidden"
+                    type="text"
+                    name="select-city"
+                    value=""
+                  />
+                </div>
+                <!-- dropdown -->
+              </div>
+              <!-- close form group-->
+            </div>
+            <!-- close contacts content -->
+            <picture class="contact__picture">
+              <source
+                media="(min-width: 1025px )"
+                srcset="src/images/contact/desktop/woman.png"
+              />
+              <source
+                media="(min-width: 600px )"
+                srcset="src/images/contact/tablet/woman.png"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="src/images/contact/mobile/woman.png"
+              />
+              <img
+                class="contacts__img"
+                src="src/images/contact/mobile/woman.png"
+                alt="woman"
+              />
+            </picture>
           </div>
-          <ul class="social">
-            <a
-              class="social__link"
-              href="https://www.facebook.com/"
-              target="_blank"
-            >
-              <span class="icon-round">
-                <span class="icon icon--meta"></span>
-              </span>
-              <span class="social__title">Facebook</span>
-              <!-- icon-round -->
-            </a>
-            <!-- social__item -->
-            <a class="social__link" href="https://twitter.com/" target="_blank">
-              <span class="icon-round">
-                <span class="icon icon--twitter"></span>
-              </span>
-              <span class="social__title">Twitter</span>
-              <!-- icon-round -->
-            </a>
-            <!-- social__item -->
-            <a
-              class="social__link"
-              href="https://www.instagram.com/"
-              target="_blank"
-            >
-              <span class="icon-round">
-                <span class="icon icon--instagram"></span>
-              </span>
-              <span class="social__title">Instagram</span>
-              <!-- icon-round -->
-            </a>
-            <!-- social__item -->
-            <a
-              class="social__link"
-              href="https://www.youtube.com/"
-              target="_blank"
-            >
-              <span class="icon-round">
-                <span class="icon icon--youtube"></span>
-              </span>
-              <span class="social__title">YouTube</span>
-              <!-- icon-round -->
-            </a>
-            <!-- social__item -->
-          </ul>
-          <!-- close social-list- -->
-          <nav class="navigation footer__nav">
-            <ul class="list footer__list">
-              <li class="list__item">
-                <a href="#" class="list__link list__link--active">About</a>
+          <!-- contacts__wrapper -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- contact -->
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__navigation layout-3-column">
+          <div class="footer-date">
+            <span class="footer-date__item">©</span>
+            <span class="footer-date__item">2022</span>
+            <span class="footer-date__item">
+              <a href="https://github.com/aliaksei-siniauski">github</a>
+            </span>
+          </div>
+          <!-- footer-date -->
+          <div class="footer-logo">
+            <a href="#"><span>Rolling Scopes School</span> </a>
+          </div>
+          <!-- footer-logo -->
+          <div class="footer-social">
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com">
+                  <img
+                    class="footer-icon icon"
+                    src="src/icons/social/inst.svg"
+                    alt="instagram"
+                  />
+                </a>
               </li>
-              <li class="list__item">
-                <a href="#" class="list__link">Map</a>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://about.facebook.com/">
+                  <img
+                    class="footer-icon icon"
+                    src="src/icons/social/meta.svg"
+                    alt="meta"
+                  />
+                </a>
               </li>
-              <li class="list__item">
-                <a href="#" class="list__link">Zoos</a>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com/">
+                  <img
+                    class="footer-icon icon"
+                    src="src/icons/social/twitter.svg"
+                    alt="twitter"
+                  />
+                </a>
               </li>
-              <li class="list__item">
-                <a href="#contacts" class="list__link">Contact us</a>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://pinterest.com/">
+                  <img
+                    class="footer-icon icon"
+                    src="src/icons/social/pinterest.svg"
+                    alt="pinterest"
+                  />
+                </a>
               </li>
             </ul>
-          </nav>
-          <!-- footer-nav -->
-          <div class="subscribe footer__subscribe">
-            <h4 class="subscribe__title">Subscribe to our news</h4>
-            <div class="subscribe">
-              <form class="subscribe__form" action method="POST">
-                <label>
-                  <input
-                    class="subscribe-line"
-                    type="email"
-                    name="email"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    placeholder="Enter your email"
-                    required
-                  />
-                  <input
-                    type="submit"
-                    class="subscribe-submit"
-                    value="Submit"
-                  />
-                </label>
-              </form>
-            </div>
+            <!-- close social-list -->
           </div>
-          <div class="copyright footer__copyright">
-            <p class="copyright__auther">Designed by Alisa Samborskaya</p>
-            <p class="copyright__company">©RSSchool & ©Yem Digital 2021</p>
-          </div>
-          <!-- close copyright -->
+          <!-- close footer-social -->
         </div>
-        <!-- footer__content -->
+        <!-- close layout-3-column-->
       </div>
-      <!-- container -->
+      <!-- close container -->
     </footer>
   </body>
   <script type="module" src="src/index.js"></script>

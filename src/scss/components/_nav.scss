@@ -1,32 +1,28 @@
-.header__nav {
-  margin-right: auto;
+.header__navigation {
+  @extend %display-none;
   @include media-tablet {
-    display: none;
-  }
-  .list__item {
-    &:not(:last-child) {
-      margin: 0 5.8rem 0 0;
-      @include media-small-desktop {
-        margin: 0 4.8rem 0 0;
-      }
-    }
+    display: block;
+    padding: 0 8px 0;
   }
 }
 
 .list {
   @extend %flex;
+  @extend %al-items-center;
+  gap: 4.8rem;
 }
 
 .list__link {
-  @extend %font-style-main;
-  @extend %link-style;
+  @extend %font-add;
+  @include font($second-size, $line-height-second);
+  color: $color-link;
   @extend %transition;
-  &--active {
-    color: $color-main;
-    pointer-events: none;
+  &:hover {
+    color: $color-hover;
+    opacity: 0.7;
   }
-}
-
-.header__list {
-  margin: 0 0 0 6.3rem;
+  &--active {
+    color: $color-hover;
+    opacity: 0.7;
+  }
 }

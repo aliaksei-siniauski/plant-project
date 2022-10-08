@@ -27,20 +27,16 @@
 @import "components/nav";
 @import "components/burger";
 @import "components/section";
-@import "components/copyright";
-@import "components/scroll";
-@import "components/subscribe";
+@import "components/collumns";
+@import "components/accordion";
+@import "components/dropdown";
 
 /* Layout  */
 
 @import "layout/header";
 @import "layout/hero";
-@import "layout/backstage";
-@import "layout/pets";
-@import "layout/pick-and-feed";
-@import "layout/testimonials";
+@import "layout/about";
+@import "layout/service";
+@import "layout/price";
+@import "layout/contacts";
 @import "layout/footer";
-
-/* Pages */
-
-@import "pages/donate";

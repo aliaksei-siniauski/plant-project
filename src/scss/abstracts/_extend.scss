@@ -1,13 +1,9 @@
-%overflow-hidden {
-  overflow: hidden;
-}
-
 %flex {
   display: flex;
 }
 
-%inline-flex {
-  display: inline-flex;
+%display-none {
+  display: none;
 }
 
 %flex-wrap {
@@ -16,10 +12,6 @@
 
 %flex-column {
   flex-direction: column;
-}
-
-%al-self-end {
-  align-self: flex-end;
 }
 
 %js-content-space-between {
@@ -34,35 +26,18 @@
   align-items: center;
 }
 
-/* %font-add {
+%font-add {
   font-family: $font-family-second;
-} */
-
-%link-style {
-  color: $color-light;
-  &:hover {
-    color: $color-main;
-  }
 }
 
-%font-info {
-  @include font($second-size, $line-height-second, $light);
-}
-
-%subtitle-font {
-  @include font($subtitle-size, $line-height-subtitle);
-}
-
-%font-style-main {
-  @include font($main-size, $line-height-main, $medium);
+%text-style {
+  font-family: $font-family-main;
+  @include font($second-size, $line-height-text-mb);
+  color: $color-text-main;
 }
 
 %text-center {
   text-align: center;
-}
-
-%text-uppercase {
-  text-transform: uppercase;
 }
 
 %transition {
@@ -73,10 +48,6 @@
   cursor: pointer;
 }
 
-%position-relative {
-  position: relative;
-}
-
-%position-absolute {
-  position: absolute;
+%letter-spacing-main {
+  letter-spacing: 0.06em;
 }
