@@ -4,7 +4,7 @@
 
 ## Project Description:
 
-Plants responsive and interactive website
+Plants responsive and interactive layout
 
 ## Highlights:
 
