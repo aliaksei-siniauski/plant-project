@@ -1,6 +1,6 @@
-export { addTagClickHandler };
+export { addButtonClickHandler };
 
-const addTagClickHandler = () => {
+const addButtonClickHandler = () => {
   document
     .querySelector(".services__buttons")
     .addEventListener("click", (e) => {
@@ -22,4 +22,4 @@ const filterBySelectedButton = (selectedButton) => {
     });
   });
 };
-addTagClickHandler();
+addButtonClickHandler();
