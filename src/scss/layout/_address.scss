@@ -1,5 +1,4 @@
 .address {
-  display: none;
   max-width: 448px;
   width: 100%;
   padding: 1.7rem 0 3.2rem 3.3rem;
@@ -9,6 +8,7 @@
 }
 
 .address__content {
+  display: none;
   padding-bottom: 2.4rem;
 }
 
