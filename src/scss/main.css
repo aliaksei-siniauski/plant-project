@@ -950,7 +950,7 @@ h4 {
   max-width: 180px;
   width: 100%;
   gap: 0.5rem;
-  padding: 1.6rem 4.2rem;
+  padding: 1.6rem 3.2rem;
   background: #edf2ec;
   border-radius: 2rem;
 }
@@ -1205,6 +1205,33 @@ h4 {
   .contacts__img {
     margin: 0;
   }
+}
+
+.address {
+  max-width: 448px;
+  width: 100%;
+  padding: 1.7rem 0 3.2rem 3.3rem;
+  background: #edf2ec;
+  border: 1px solid #000000;
+  border-radius: 2rem;
+}
+
+.address__content {
+  padding-bottom: 2.4rem;
+}
+
+.address__left {
+  line-height: 4rem;
+  color: #000000;
+}
+
+.address__right {
+  line-height: 2rem;
+}
+
+.address__button {
+  width: 12rem;
+  font-size: 1rem;
 }
 
 .footer {

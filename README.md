@@ -1,4 +1,4 @@
-# [plant-project](https://aliaksei-siniauski.github.io/plant-project/)
+# [Plant-project](https://aliaksei-siniauski.github.io/plant-project/)
 
 ![plant-project](https://snipboard.io/S25ycq.jpg)
 
