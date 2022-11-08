@@ -23,6 +23,7 @@ Plants responsive and interactive layout
 ## Features:
 
 - Interactive burger menu
+- Interactive changing images in the services section
 
 ## Techs:
 
