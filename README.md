@@ -11,8 +11,6 @@ Plants responsive and interactive layout
 - Semantic HTML
 - Readable and easy to maintain code
 - Responsive CSS
-- Accordion
-- Drop Down
 - Dynamically inserting content
 - Querying and manipulating with the DOM
 - Event listeners
@@ -22,6 +20,8 @@ Plants responsive and interactive layout
 
 ## Features:
 
+- Accordion
+- Drop Down
 - Interactive burger menu
 - Interactive changing images in the services section
 
