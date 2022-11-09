@@ -751,13 +751,17 @@ h4 {
   }
 }
 
-.service__button {
+.services__button {
   width: 120px;
 }
 @media (min-width: 600px) {
-  .service__button {
+  .services__button {
     width: 161px;
   }
+}
+.services__button.services__button--active {
+  color: #ffffff;
+  background: #e06733;
 }
 
 .services {

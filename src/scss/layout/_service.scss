@@ -50,10 +50,14 @@
   }
 }
 
-.service__button {
+.services__button {
   width: 120px;
   @include media-tablet {
     width: 161px;
+  }
+  &.services__button--active {
+    color: $color-light;
+    background: $color-hover;
   }
 }
 
