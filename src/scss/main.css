@@ -745,17 +745,18 @@ h4 {
 .services__buttons {
   gap: 1rem;
 }
-.services__buttons > button {
-  width: 120px;
-}
-@media (min-width: 600px) {
-  .services__buttons > button {
-    width: 161px;
-  }
-}
 @media (min-width: 600px) {
   .services__buttons {
     gap: 3.8rem;
+  }
+}
+
+.service__button {
+  width: 120px;
+}
+@media (min-width: 600px) {
+  .service__button {
+    width: 161px;
   }
 }
 
@@ -1097,7 +1098,7 @@ h4 {
     flex-direction: row-reverse;
     gap: 37rem;
     align-items: stretch;
-    padding: 33px 0 0 0;
+    padding: 3.3rem 0 0 0;
   }
 }
 
@@ -1143,7 +1144,7 @@ h4 {
   height: 16px;
   display: block;
   background-color: #aea1a1;
-  background-image: url("/src/icons/accordion/arrow-down.svg");
+  background-image: url("../icons/accordion/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
