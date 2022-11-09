@@ -1168,7 +1168,7 @@ h4 {
   border: none;
 }
 .contacts__dropdown .dropdown__button:focus::after {
-  background-image: url("/src/icons/accordion/arrow-up.svg");
+  background-image: url("../icons/accordion/arrow-up.svg");
 }
 .contacts__dropdown .dropdown__list {
   position: absolute;
