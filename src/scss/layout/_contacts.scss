@@ -28,7 +28,7 @@
     flex-direction: row-reverse;
     gap: 37rem;
     align-items: stretch;
-    padding: 33px 0 0 0;
+    padding: 3.3rem 0 0 0;
   }
 }
 .contacts__content {
@@ -69,7 +69,7 @@
       height: 16px;
       display: block;
       background-color: $color-drop-btn-unactive;
-      background-image: url("/src/icons/accordion/arrow-down.svg");
+      background-image: url("../icons/accordion/arrow-down.svg");
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 50%;

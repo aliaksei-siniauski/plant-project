@@ -44,15 +44,20 @@
 .services__buttons {
   @extend %flex;
   @extend %flex-wrap;
-  > button {
-    width: 120px;
-    @include media-tablet {
-      width: 161px;
-    }
-  }
   gap: 1rem;
   @include media-tablet {
     gap: 3.8rem;
+  }
+}
+
+.services__button {
+  width: 120px;
+  @include media-tablet {
+    width: 161px;
+  }
+  &.services__button--active {
+    color: $color-light;
+    background: $color-hover;
   }
 }
 
