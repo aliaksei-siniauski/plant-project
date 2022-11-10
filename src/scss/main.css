@@ -8,7 +8,7 @@
 /* Container width */
 /* Media quaries */
 /* Meida quaries */
-.footer-social, .footer-date, .contacts__wrapper, .price-item, .prices, .services, .services__buttons, .service__top, .about__container, .hero__content, .hero__container, .header__container, .contacts__dropdown .dropdown__list, .accordion-cicle, .layout-3-column, .burger, .list, .logo, body {
+.footer-social, .footer-date, .contacts__wrapper, .price-top, .prices, .services, .services__buttons, .service__top, .about__container, .hero__content, .hero__container, .header__container, .contacts__dropdown .dropdown__list, .accordion-cicle, .layout-3-column, .burger, .list, .logo, body {
   display: flex;
 }
 
@@ -24,7 +24,7 @@
   flex-direction: column;
 }
 
-.price-item, .hero__container, .header__container, .layout-3-column, .burger, body {
+.price-top, .hero__container, .header__container, .layout-3-column, .burger, body {
   justify-content: space-between;
 }
 
@@ -32,11 +32,11 @@
   justify-content: center;
 }
 
-.footer__navigation, .contacts__wrapper, .price-item, .prices, .services, .about__container, .hero__container, .header__container, .accordion-cicle, .list {
+.footer__navigation, .contacts__wrapper, .price-top, .prices, .services, .about__container, .hero__container, .header__container, .accordion-cicle, .list {
   align-items: center;
 }
 
-.list__link, h4, h3 {
+.list__link, h3 {
   font-family: "Inika", serif;
 }
 
@@ -954,7 +954,6 @@ h4 {
 .price-item {
   max-width: 180px;
   width: 100%;
-  gap: 0.5rem;
   padding: 1.6rem 3.2rem;
   background: #edf2ec;
   border-radius: 2rem;
@@ -963,6 +962,10 @@ h4 {
   .price-item {
     max-width: 250px;
   }
+}
+
+.price-top {
+  gap: 0.5rem;
 }
 
 .price-accordion {
@@ -975,6 +978,61 @@ h4 {
     padding: 3.4rem 4.1rem;
     border: 1px solid $color-border-radius;
     border-radius: 20px; */
+}
+
+.price-item__content {
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion-background {
+  background: #d6e7d2;
+}
+.accordion-background .price-item__content {
+  height: auto;
+}
+.accordion-background .price__accordion-cicle {
+  background: #aea1a1;
+}
+.accordion-background .icon--arrow-down {
+  background: url("../icons/accordion/arrow-up.svg");
+}
+
+.price-item__text {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  color: #717171;
+  max-width: 169px;
+  margin-top: 1rem;
+  padding-top: 0.6rem;
+  border-top: 0.5px solid #aea1a1;
+}
+
+.cost__info {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  padding: 0.6rem 0 1.2rem;
+}
+.cost__info--red {
+  color: #499a18;
+  font-weight: 700;
+}
+
+.cost__button {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0.3rem 2rem;
+  color: #717171;
+  background: #ffffff;
+  border: none;
 }
 
 /* Call-us */

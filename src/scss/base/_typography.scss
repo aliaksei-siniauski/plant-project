@@ -26,7 +26,6 @@ h3 {
 }
 
 h4 {
-  @extend %font-add;
   color: $color-dark;
   @include media-tablet {
     @include font($main-size, $line-height-main, $bold);
