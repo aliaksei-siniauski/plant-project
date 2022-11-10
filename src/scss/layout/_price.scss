@@ -73,10 +73,6 @@
 .price-item {
   max-width: 180px;
   width: 100%;
-  @extend %flex;
-  @extend %js-content-space-between;
-  @extend %al-items-center;
-  gap: 0.5rem;
   padding: 1.6rem 3.2rem;
   background: $color-background-section;
   border-radius: 2rem;
@@ -84,6 +80,12 @@
   @include media-tablet {
     max-width: 250px;
   }
+}
+.price-top {
+  @extend %flex;
+  @extend %js-content-space-between;
+  @extend %al-items-center;
+  gap: 0.5rem;
 }
 
 .price-accordion {
@@ -96,6 +98,52 @@
     padding: 3.4rem 4.1rem;
     border: 1px solid $color-border-radius;
     border-radius: 20px; */
+}
+
+.price-item__content {
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion-background {
+  background: #d6e7d2;
+  & .price-item__content {
+    height: auto;
+  }
+  & .price__accordion-cicle {
+    background: $color-drop-btn-unactive;
+  }
+  & .icon--arrow-down {
+    background: url("../icons/accordion/arrow-up.svg");
+  }
+}
+
+.price-item__text {
+  @include font(1rem, 1rem, $light);
+  color: $color-text-second;
+  max-width: 169px;
+  margin-top: 1rem;
+  padding-top: 0.6rem;
+  border-top: 0.5px solid $color-drop-btn-unactive;
+}
+
+.cost__info {
+  @include font(1.2rem, $line-height-main);
+  color: $color-dark;
+  padding: 0.6rem 0 1.2rem;
+  &--red {
+    color: $color-accent;
+    font-weight: $bold;
+  }
+}
+
+.cost__button {
+  @include font(1.2rem, $line-height-main, $bold);
+  padding: 0.3rem 2rem;
+  color: $color-text-second;
+  background: $color-light;
+  border: none;
 }
 
 /* Call-us */
