@@ -7,7 +7,6 @@ const addClickHandelertoAccordion = () => {
 
   accordionItems.forEach((item) => {
     item.addEventListener("click", () => {
-      let priceButton = item.querySelector(".cost__button");
       item.classList.toggle("accordion-background");
     });
   });
